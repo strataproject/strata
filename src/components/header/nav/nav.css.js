@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Container = styled.nav`
   ul {
@@ -8,11 +8,10 @@ export const Container = styled.nav`
 
     li {
       text-transform: uppercase;
-      font-size: 1.3rem;
 
       & + li {
         margin-left: 2rem;
       }
     }
   }
-`;
+`

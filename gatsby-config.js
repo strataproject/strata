@@ -1,4 +1,4 @@
-const siteConfig = require('./site-config');
+const siteConfig = require('./site-config')
 
 module.exports = {
   siteMetadata: {
@@ -22,6 +22,12 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-webpack-size`,
     {
+      resolve: 'gatsby-plugin-typography',
+      options: {
+        pathToConfigModule: 'config/typography.js',
+      },
+    },
+    {
       resolve: `gatsby-plugin-react-svg`,
       options: {
         rule: {
@@ -30,4 +36,4 @@ module.exports = {
       },
     },
   ],
-};
+}

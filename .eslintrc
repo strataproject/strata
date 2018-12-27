@@ -4,6 +4,9 @@
     "browser": true,
     "node": true
   },
+  "globals": {
+    "tw": true
+  },
   "rules": {
     "strict": 0,
     "no-console": "warn",

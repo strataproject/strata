@@ -1,10 +1,11 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
+import tw from 'tailwind.macro'
 
 export const Container = styled.header`
+  ${tw`mx-auto p-2 md:p-4 lg:p-8 xl:p-16`}
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem;
 
   a {
     color: #757575;
@@ -15,4 +16,4 @@ export const Container = styled.header`
       color: inherit;
     }
   }
-`;
+`

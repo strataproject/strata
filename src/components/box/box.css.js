@@ -1,6 +1,7 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
-export const Container = styled.div`
-  padding: 2rem 4rem;
-  max-width: 700px;
-`;
+import tw from 'tailwind.macro'
+
+export const Container = styled.header`
+  ${tw`p-2 md:p-4 lg:p-8 xl:p-16 max-w-xl`}
+`

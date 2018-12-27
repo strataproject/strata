@@ -1,21 +1,9 @@
-Find the repository [on GitHub](https://github.com/fabe/gatsby-universal).
+# The problem
 
-```
-# Installation
-gatsby new my-site https://github.com/fabe/gatsby-universal
+If we’re to hit the Paris and Katowice targets to address climate change, we must scale up the way we fund projects that move us closer towards success. We believe that a major barrier to achieving scale is that the underlying data around sustainability scoring is challenging to obtain and process.
 
-# To develop
-yarn develop
+# The lab and the team
 
-# To build
-yarn build
+We’re a team of two, working at an early stage out of [ING Labs London](https://www.ing.com/About-us/ING-Labs.htm) to investigate the problem and find potential solutions.
 
-# To test SSR (for Lighthouse etc.)
-yarn ssr
-
-# To format JS (precommit)
-yarn format
-
-# To generate favicons (included in `build`)
-yarn build:favicons
-```
+We're [Stef Lewandowski](Stef Lewandowski) and [Tee Pruitt](https://www.linkedin.com/in/teepruitt).

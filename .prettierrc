@@ -5,5 +5,8 @@
   "bracketSpacing": true,
   "jsxBracketSameLine": false,
   "parser": "babylon",
-  "semi": true
+  "semi": false,
+  "globals": {
+    "tw": true
+  },
 }
