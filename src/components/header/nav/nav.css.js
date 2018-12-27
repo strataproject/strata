@@ -9,7 +9,8 @@ export const Container = styled.nav`
     padding: 0;
 
     li {
-      ${tw`font-sans`}
+      ${tw`font-sans text-xs inline-block px-2`}
+      margin-top: 2rem;
       text-transform: uppercase;
 
       & + li {

@@ -8,8 +8,9 @@ import 'typeface-aleo'
 
 const typography = new Typography({
   title: 'Strata',
-  baseFontSize: '18px',
+  baseFontSize: '21px',
   baseLineHeight: 1.45,
+  bodyColor: 'hsla(0,0%,0%,0.8)',
   headerFontFamily: [
     'Clear Sans',
     '-apple-system',
@@ -36,7 +37,7 @@ const typography = new Typography({
     'Segoe UI Emoji',
     'Segoe UI Symbol',
   ],
-  scaleRatio: 3,
+  scaleRatio: 2,
   headerWeight: 300,
   overrideStyles: () => ({
     img: {
