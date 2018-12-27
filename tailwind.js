@@ -191,7 +191,7 @@ module.exports = {
 
   fonts: {
     sans: [
-      'Montserrat',
+      'Clear Sans',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
@@ -206,7 +206,7 @@ module.exports = {
       'sans-serif',
     ],
     body: [
-      'Source Sans Pro',
+      'Aleo',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',

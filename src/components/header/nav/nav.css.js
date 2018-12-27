@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+import tw from 'tailwind.macro'
+
 export const Container = styled.nav`
   ul {
     display: flex;
@@ -7,6 +9,7 @@ export const Container = styled.nav`
     padding: 0;
 
     li {
+      ${tw`font-sans`}
       text-transform: uppercase;
 
       & + li {
