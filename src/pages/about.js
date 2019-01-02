@@ -17,6 +17,7 @@ const About = ({ data }) => (
       />
       <INGLogo style={{ width: '10rem' }} />
     </Box>
+    <div style={{ marginTop: '16em' }} />
   </Layout>
 )
 

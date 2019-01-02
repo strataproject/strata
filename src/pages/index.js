@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 import Layout from 'components/layout'
 import Box from 'components/box'
 import Title from 'components/title'
+import Link from 'gatsby-link'
 //import Gallery from 'components/gallery'
 //import IOExample from 'components/io-example'
 import Modal from 'containers/modal'
 import { graphql } from 'gatsby'
-import Curves from './../images/strata-bg.svg'
 import Signup from 'components/signup'
 
 const Index = ({ data }) => (
@@ -30,26 +30,35 @@ const Index = ({ data }) => (
       <Title as="h1" size="large">
         {data.homeJson.content.childMarkdownRemark.rawMarkdownBody}
       </Title>
+    </Box>
+
+    <Box>
       <p>
         We believe the only way to address the urgency of the Paris Accord
         targets is to unleash a wave of investment in green initiatives.
+      </p>
+      <p>
         Starting with commercial real estate, we believe that without adequate
         high quality data about the greenness of assets, there will be a
-        limiting factor on being able to achieve the growth needed. We aim to
-        enable financial institutions to offer green financial products faster
-        and more widely.
+        limiting factor on being able to achieve the growth needed.
       </p>
-      <Modal cta="Request early access">
+      <p>
+        We aim to enable financial institutions to offer green financial
+        products faster and more widely by tackling the problem of sourcing and
+        handling sustainability data.
+      </p>
+      <Modal cta="Register your interest">
         <Signup />
       </Modal>
+      <p>
+        <Link to="/about">Read more</Link>
+      </p>
     </Box>
+
+    <div style={{ marginTop: '16em' }} />
 
     {/*<Gallery items={data.homeJson.gallery} />
     <div style={{ height: '50vh' }} />*/}
-    <Curves
-      style={{ width: '100%', height: 'auto' }}
-      alt="Graphic showing curves implying data"
-    />
   </Layout>
 )
 
