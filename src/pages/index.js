@@ -31,8 +31,13 @@ const Index = ({ data }) => (
         {data.homeJson.content.childMarkdownRemark.rawMarkdownBody}
       </Title>
       <p>
-        We aim to enable financial institutions to offer green financial
-        products faster and more widely.
+        We believe the only way to address the urgency of the Paris Accord
+        targets is to unleash a wave of investment in green initiatives.
+        Starting with commercial real estate, we believe that without adequate
+        high quality data about the greenness of assets, there will be a
+        limiting factor on being able to achieve the growth needed. We aim to
+        enable financial institutions to offer green financial products faster
+        and more widely.
       </p>
       <Modal cta="Request early access">
         <Signup />
