@@ -15,10 +15,12 @@ const Index = ({ data }) => (
     {/*  To handle form responses on Netlify */}
     <form
       name="strata-early-interest"
-      netlify
+      netlify="netlify"
       netlify-honeypot="bot-field"
       hidden
     >
+      <input type="hidden" name="form-name" value="strata-early-interest" />
+      <input type="hidden" name="bot-field" />
       <input type="text" name="name" />
       <input type="email" name="email" />
       <input type="company" name="company" />
