@@ -6,50 +6,9 @@ import Title from 'components/title'
 //import Gallery from 'components/gallery'
 //import IOExample from 'components/io-example'
 import Modal from 'containers/modal'
-import Form from 'components/form'
 import { graphql } from 'gatsby'
 import Curves from './../images/strata-bg.svg'
-import { Button } from './../components/modal/modal.css'
-
-const SignupForm = () => (
-  <Form
-    netlify
-    name="strata-early-interest"
-    method="post"
-    data-netlify="true"
-    data-netlify-honeypot="bot-field"
-    action="/joined"
-  >
-    <input type="hidden" name="bot-field" />
-    <Title as="h2" size="medium">
-      Sign up for early access
-    </Title>
-    <div className="field">
-      <label htmlFor="name" id="name_label">
-        <span>Your name</span>
-        <input type="text" name="name" id="name" />
-      </label>
-    </div>
-
-    <div className="field">
-      <label htmlFor="email" id="email_label">
-        <span>Your email</span>
-        <input type="text" name="email" id="email" />
-      </label>
-    </div>
-
-    <div className="field">
-      <label htmlFor="company" id="company_label">
-        <span>Your company</span>
-        <input type="text" name="company" id="company" />
-      </label>
-    </div>
-
-    <div className="field">
-      <Button type="submit">Sign up</Button>
-    </div>
-  </Form>
-)
+import Signup from 'components/signup'
 
 const Index = ({ data }) => (
   <Layout>
@@ -58,7 +17,7 @@ const Index = ({ data }) => (
         {data.homeJson.content.childMarkdownRemark.rawMarkdownBody}
       </Title>
       <Modal cta="Request early access">
-        <SignupForm />
+        <Signup />
       </Modal>
     </Box>
 
