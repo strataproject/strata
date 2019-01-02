@@ -12,6 +12,18 @@ import Signup from 'components/signup'
 
 const Index = ({ data }) => (
   <Layout>
+    {/*  To handle form responses on Netlify */}
+    <form
+      name="strata-early-interest"
+      netlify
+      netlify-honeypot="bot-field"
+      hidden
+    >
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="company" name="company" />
+    </form>
+
     <Box>
       <Title as="h1" size="large">
         {data.homeJson.content.childMarkdownRemark.rawMarkdownBody}
