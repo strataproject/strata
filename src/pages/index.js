@@ -30,6 +30,10 @@ const Index = ({ data }) => (
       <Title as="h1" size="large">
         {data.homeJson.content.childMarkdownRemark.rawMarkdownBody}
       </Title>
+      <p>
+        We aim to enable financial institutions to offer green financial
+        products faster and more widely.
+      </p>
       <Modal cta="Request early access">
         <Signup />
       </Modal>
