@@ -10,11 +10,11 @@ export const Container = styled.nav`
 
     li {
       ${tw`font-sans text-xs inline-block px-2`}
-      margin-top: 2rem;
+      margin-top: 2.4rem;
       text-transform: uppercase;
 
       & + li {
-        margin-left: 2rem;
+        margin-left: 1rem;
       }
     }
   }
