@@ -1,19 +1,18 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
+import { accent } from 'constants/theme'
 
 export const Button = styled.button`
   -webkit-appearance: none;
-  background-color: #fff;
+  background-color: ${accent};
   border-radius: 5px;
   border: none;
-  color: #757575;
-  border: 1px solid #ddd;
+  color: #ffffff;
   cursor: pointer;
   font-family: inherit;
   font-size: 1.3rem;
   font-weight: 500;
-  margin: 4rem 0 2rem;
+  margin: 2rem 0 2rem;
   padding: 1rem 2rem;
-  text-transform: uppercase;
   transition: 0.2s background-color ease;
 
   &:active,
@@ -23,13 +22,13 @@ export const Button = styled.button`
   }
 
   &:hover {
-    background-color: #f9f9f9;
+    background-color: #222222;
   }
 
   & + & {
     margin-left: 1rem;
   }
-`;
+`
 
 export const Close = styled.button`
   -webkit-appearance: none;
@@ -44,4 +43,4 @@ export const Close = styled.button`
   top: 0;
   right: 0;
   color: #fff;
-`;
+`
