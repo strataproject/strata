@@ -47,7 +47,7 @@ export default class Modal extends PureComponent {
       <>
         <Button onClick={showModal}>{cta}</Button>
 
-        <Dialog isOpen={open}>
+        <Dialog style={{ width: '100%', maxWidth: '32rem' }} isOpen={open}>
           <Close onClick={hideModal}>
             <VisuallyHidden>Close</VisuallyHidden>
             <span aria-hidden>×</span>
