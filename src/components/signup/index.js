@@ -24,6 +24,9 @@ export default class Signup extends React.Component {
     console.log(e)
     e.preventDefault()
     const form = e.target
+    if (typeof analytics !== 'undefined') {
+      analytics.track('Signed up')
+    }
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
