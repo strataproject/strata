@@ -7,6 +7,7 @@ import Title from 'components/title'
 //import IOExample from 'components/io-example'
 //import Modal from 'containers/modal'
 import { graphql } from 'gatsby'
+import Curves from './../images/strata-bg.svg'
 
 const Index = ({ data }) => (
   <Layout>
@@ -17,6 +18,10 @@ const Index = ({ data }) => (
     </Box>
     {/*<Gallery items={data.homeJson.gallery} />
     <div style={{ height: '50vh' }} />*/}
+    <Curves
+      style={{ width: '100%', height: 'auto' }}
+      alt="Graphic showing curves implying data"
+    />
   </Layout>
 )
 
