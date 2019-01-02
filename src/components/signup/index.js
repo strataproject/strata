@@ -39,7 +39,7 @@ export default class Signup extends React.Component {
   render() {
     return (
       <Form
-        netlify={true}
+        netlify="netlify"
         name="strata-early-interest"
         method="post"
         action="/joined"
