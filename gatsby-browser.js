@@ -13,5 +13,5 @@ export const wrapRootElement = ({ element }) => {
 }
 
 // Page Transitions
-export const unusedWrapPageElement = wrapPageElementWithTransition
+//export const unusedWrapPageElement = wrapPageElementWithTransition
 export const wrapPageElement = wrapPageElementWithoutTransition

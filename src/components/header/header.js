@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 //import posed from 'react-pose'
-import { Container } from './header.css'
+import { HeaderContainer } from './header.css'
 //import Title from 'components/title'
 import Nav from 'components/header/nav'
 import Logo from './../../images/strata-logo.svg'
@@ -24,13 +24,13 @@ import Logo from './../../images/strata-logo.svg'
 // })
 
 const Header = ({ title }) => (
-  <Container>
+  <HeaderContainer>
     <Link to="/" aria-label={title} style={{ width: '10rem' }}>
       <Logo />
     </Link>
 
     <Nav />
-  </Container>
+  </HeaderContainer>
 )
 
 Header.propTypes = {

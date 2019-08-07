@@ -5,10 +5,16 @@ import Head from 'components/head'
 import Header from 'components/header'
 import Footer from 'components/footer'
 import GlobalStyle from 'global.css.js'
+
+import styled from 'styled-components'
+import tw from 'tailwind.macro'
+
 //import Curves from './../../images/strata-bg.svg'
 
+const Container = styled.div`${tw`container mx-auto`}`
+
 const Layout = ({ data, children }) => (
-  <div>
+  <Container>
     <GlobalStyle />
     <Head />
     <Header title={data.site.siteMetadata.siteTitle} />
@@ -27,7 +33,7 @@ const Layout = ({ data, children }) => (
       }}
       alt="Graphic showing curves implying data"
     />*/}
-  </div>
+  </Container>
 )
 
 Layout.propTypes = {
