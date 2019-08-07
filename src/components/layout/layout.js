@@ -3,8 +3,9 @@ import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import Head from 'components/head'
 import Header from 'components/header'
+import Footer from 'components/footer'
 import GlobalStyle from 'global.css.js'
-import Curves from './../../images/strata-bg.svg'
+//import Curves from './../../images/strata-bg.svg'
 
 const Layout = ({ data, children }) => (
   <div>
@@ -12,7 +13,8 @@ const Layout = ({ data, children }) => (
     <Head />
     <Header title={data.site.siteMetadata.siteTitle} />
     {children}
-    <Curves
+    <Footer title={data.site.siteMetadata.siteTitle} />
+    {/*<Curves
       style={{
         position: 'fixed',
         zIndex: -1,
@@ -24,7 +26,7 @@ const Layout = ({ data, children }) => (
         transform: 'scaleX(-1)',
       }}
       alt="Graphic showing curves implying data"
-    />
+    />*/}
   </div>
 )
 

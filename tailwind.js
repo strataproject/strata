@@ -206,7 +206,7 @@ module.exports = {
       'sans-serif',
     ],
     body: [
-      'Aleo',
+      'Inter',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',

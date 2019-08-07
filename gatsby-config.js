@@ -9,8 +9,41 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     //`gatsby-plugin-offline`,
     `gatsby-transformer-json`,
-    `gatsby-transformer-remark`,
-    `gatsby-plugin-eslint`,
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        // plugins: [
+        //   {
+        //     resolve: 'gatsby-remark-find-replace',
+        //     options: {
+        //       // List your find and replace values. Both values must be strings.
+        //       // This is required.
+        //       replacements: {
+        //         COMPANY: 'My Company',
+        //         COPYRIGHT: `Copyright ${new Date().getFullYear()} My Company`,
+        //       },
+
+        //       // By default, find values are prefixed to reduce the chances of
+        //       // conflicting with real content. You can change the prefix here.
+        //       // Set to `false` to disable the prefix.
+        //       prefix: '%',
+        //     },
+        //   },
+        // ]
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-eslint',
+      options: {
+        test: /\.js$|\.jsx$/,
+        exclude: /(node_modules|.cache|public)/,
+        stages: ['develop'],
+        options: {
+          emitWarning: true,
+          failOnError: false
+        }
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -54,5 +87,6 @@ module.exports = {
         trackPage: true,
       },
     },
+    
   ],
 }

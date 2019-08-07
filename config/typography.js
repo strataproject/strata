@@ -1,7 +1,7 @@
 import Typography from 'typography'
 
 import 'typeface-clear-sans'
-import 'typeface-aleo'
+import 'typeface-inter'
 
 // This website uses the system font stack after the placed "Montserrat" and "Source Sans Pro" fonts
 // The scaleRatio will be overwritten for smaller breakpoints in src/components/Layout
@@ -25,7 +25,7 @@ const typography = new Typography({
     'Segoe UI Symbol',
   ],
   bodyFontFamily: [
-    'Aleo',
+    'Inter',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',

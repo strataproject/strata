@@ -1,7 +1,10 @@
 import React from 'react'
 import AppProvider from 'store/provider'
-import wrapPageElementWithTransition from 'helpers/wrapPageElement'
-import 'typeface-aleo'
+import {
+  wrapPageElementWithTransition, 
+  wrapPageElementWithoutTransition,
+} from 'helpers/wrapPageElement'
+import 'typeface-inter'
 import 'typeface-clear-sans'
 // React Context in Browser
 // eslint-disable-next-line react/prop-types
@@ -10,4 +13,5 @@ export const wrapRootElement = ({ element }) => {
 }
 
 // Page Transitions
-export const wrapPageElement = wrapPageElementWithTransition
+export const unusedWrapPageElement = wrapPageElementWithTransition
+export const wrapPageElement = wrapPageElementWithoutTransition

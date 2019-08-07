@@ -28,25 +28,18 @@ const Index = ({ data }) => (
 
     <Box>
       <Title as="h1" size="large">
-        {data.homeJson.content.childMarkdownRemark.rawMarkdownBody}
+        A new platform to tackle the problem of working with sustainability data at scale.
+        
       </Title>
     </Box>
 
     <Box>
-      <p>
-        We believe the only way to address the urgency of the Paris Accord
-        targets is to unleash a wave of investment in green initiatives.
-      </p>
-      <p>
-        Starting with commercial real estate, we believe that without adequate
-        high quality data about the greenness of assets, there will be a
-        limiting factor on being able to achieve the growth needed.
-      </p>
-      <p>
-        We aim to enable financial institutions to offer green financial
-        products faster and more widely by tackling the problem of sourcing and
-        handling sustainability data.
-      </p>
+      <div
+        dangerouslySetInnerHTML={{
+          __html: data.homeJson.content.childMarkdownRemark.html,
+        }}
+      />
+
       <Modal cta="Register your interest">
         <Signup />
       </Modal>
