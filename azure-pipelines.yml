@@ -19,7 +19,7 @@ steps:
   inputs:
     versionSpec: '1.x'
     checkLatest: true
-    
-- script: |
-    yarn run build
-  displayName: 'Yarn build'
+
+- task: Yarn@3
+  inputs:
+    arguments: 'build'
