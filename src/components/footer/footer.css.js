@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
 
-export const Container = styled.footer`
-  ${tw`mx-auto p-2 md:p-4 lg:p-6 lg:px-8 xl:p-8 xl:px-16`}
+export const FooterContainer = styled.footer`
+  ${tw`mx-auto py-2 md:py-4 lg:py-6 xl:py-8`}
   display: flex;
   justify-content: space-between;
   align-items: center;

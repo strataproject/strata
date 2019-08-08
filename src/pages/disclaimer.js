@@ -3,18 +3,19 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from 'components/layout'
 import Box from 'components/box'
+import Container from 'components/container'
 import Head from 'components/head'
 
 const Disclaimer = ({ data }) => (
   <Layout>
     <Head pageTitle={data.disclaimerJson.title} />
-    <Box>
+    <Container>
       <div
         dangerouslySetInnerHTML={{
           __html: data.disclaimerJson.content.childMarkdownRemark.html,
         }}
       />
-    </Box>
+    </Container>
   </Layout>
 )
 

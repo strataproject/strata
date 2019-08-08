@@ -3,18 +3,19 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from 'components/layout'
 import Box from 'components/box'
+import Container from 'components/container'
 import Head from 'components/head'
 
 const Privacy = ({ data }) => (
   <Layout>
-    <Head pageTitle={data.privacyJson.title} />
-    <Box>
+    <Container>
+      <Head pageTitle={data.privacyJson.title} />
       <div
         dangerouslySetInnerHTML={{
           __html: data.privacyJson.content.childMarkdownRemark.html,
         }}
       />
-    </Box>
+    </Container>
   </Layout>
 )
 
