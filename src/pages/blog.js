@@ -8,12 +8,9 @@ import Head from 'components/head'
 const Blog = ({ data }) => (
   <Layout>
     <Head pageTitle={'Blog'} />
-    <Box>
-      
-    </Box>
+    <Box></Box>
     <div style={{ marginTop: '16em' }} />
   </Layout>
 )
-
 
 export default Blog

@@ -11,7 +11,9 @@ import tw from 'tailwind.macro'
 
 //import Curves from './../../images/strata-bg.svg'
 
-const Container = styled.div`${tw`container mx-auto`}`
+const Container = styled.div`
+  ${tw`container mx-auto`}
+`
 
 const Layout = ({ data, children }) => (
   <Container>

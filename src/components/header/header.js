@@ -23,14 +23,24 @@ import Logo from './../../images/strata-logo.svg'
 //   },
 // })
 
-const Header = ({ title }) => (
-  <HeaderContainer>
-    <Link to="/" aria-label={title} style={{ width: '10rem' }}>
-      <Logo />
-    </Link>
+import styled from 'styled-components'
+import tw from 'tailwind.macro'
 
-    <Nav />
-  </HeaderContainer>
+export const Container = styled.div`
+  ${tw`mx-auto c-container container`}
+`
+
+
+const Header = ({ title }) => (
+  <Container>
+    <HeaderContainer>
+      <Link to="/" aria-label={title} style={{ width: '10rem' }}>
+        <Logo />
+      </Link>
+
+      <Nav />
+    </HeaderContainer>
+  </Container>
 )
 
 Header.propTypes = {

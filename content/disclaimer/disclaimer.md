@@ -27,4 +27,4 @@ While %COMPANY uses reasonable efforts to include accurate and up-to-date inform
 
 ## Applicable law
 
-This website and disclaimer are subject to British law. %COMPANY is an experimental project from ING. ING is under supervision of the European Central Bank (‘ECB’). Information regarding supervision of ING can be obtained from the websites of ING.
+This website and disclaimer are subject to Dutch law. %COMPANY is an experimental project from ING. ING is under supervision of the European Central Bank (‘ECB’). Information regarding supervision of ING can be obtained from the websites of ING.

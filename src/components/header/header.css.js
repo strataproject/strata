@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import tw from 'tailwind.macro'
 
 export const HeaderContainer = styled.header`
-  ${tw`mx-auto p-2 md:p-4 lg:p-6 lg:px-8 xl:p-8 xl:px-16`}
+  ${tw`mx-auto c-container max-w-2xl p-2`}
   display: flex;
   justify-content: space-between;
   align-items: center;

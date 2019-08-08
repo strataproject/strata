@@ -5,7 +5,7 @@ import {
   wrapPageElementWithoutTransition,
 } from 'helpers/wrapPageElement'
 import 'typeface-inter'
-import 'typeface-clear-sans'
+import 'typeface-muli'
 // React Context in Browser
 // eslint-disable-next-line react/prop-types
 export const wrapRootElement = ({ element }) => {

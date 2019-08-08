@@ -1,6 +1,6 @@
 import Typography from 'typography'
 
-import 'typeface-clear-sans'
+import 'typeface-muli'
 import 'typeface-inter'
 
 // This website uses the system font stack after the placed "Montserrat" and "Source Sans Pro" fonts
@@ -8,11 +8,11 @@ import 'typeface-inter'
 
 const typography = new Typography({
   title: 'Strata',
-  baseFontSize: '21px',
+  baseFontSize: '16px',
   baseLineHeight: 1.45,
   bodyColor: 'hsla(0,0%,0%,0.8)',
   headerFontFamily: [
-    'Clear Sans',
+    'Red Hat Display',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',
@@ -38,7 +38,7 @@ const typography = new Typography({
     'Segoe UI Symbol',
   ],
   scaleRatio: 2,
-  headerWeight: 300,
+  headerWeight: 100,
   overrideStyles: () => ({
     img: {
       marginBottom: 0,

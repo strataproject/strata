@@ -6,16 +6,24 @@ const Nav = () => (
   <Container>
     <ul>
       <li>
-        <Link to="/about" activeClassName="active">About</Link>
+        <Link to="/about" activeClassName="active">
+          About
+        </Link>
       </li>
       <li>
-        <Link to="/blog" activeClassName="active">Blog</Link>
+        <Link to="/blog" activeClassName="active">
+          Blog
+        </Link>
       </li>
       <li>
-        <Link to="/team" activeClassName="active">Team</Link>
+        <Link to="/team" activeClassName="active">
+          Team
+        </Link>
       </li>
       <li>
-        <Link to="/contact" activeClassName="active">Contact</Link>
+        <Link to="/contact" activeClassName="active">
+          Contact
+        </Link>
       </li>
     </ul>
   </Container>

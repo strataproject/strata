@@ -23,7 +23,7 @@ import Logo from './../../images/strata-logo.svg'
 //   },
 // })
 
-const Footer = ({ title }) => (
+const Newsletter = ({ title }) => (
   <Container>
     <div aria-label={title} style={{ width: '12rem', fontSize: '0.5rem' }}>
       <div style={{ width: '6rem' }}>
@@ -37,8 +37,8 @@ const Footer = ({ title }) => (
   </Container>
 )
 
-Footer.propTypes = {
+Newsletter.propTypes = {
   title: PropTypes.string.isRequired,
 }
 
-export default Footer
+export default Newsletter

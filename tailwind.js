@@ -191,7 +191,7 @@ module.exports = {
 
   fonts: {
     sans: [
-      'Clear Sans',
+      'Muli',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
@@ -900,12 +900,39 @@ module.exports = {
   |
   */
 
+  theme: {
+    screens: {
+      'sm': '640px',
+    },
+    fluidContainer: {
+      'default': {
+        maxWidth: '1200px',   // defaults to null (no maximum width)
+        padding: '15px',      // defaults to '15px'
+        responsivePadding: {  // defaults to {}
+          'sm': '30px',       // at screen 'sm', the padding will change to 30px
+        },
+      },
+    },
+  },
+  variants: { // for the utilities
+    fluidContainer: ['responsive'], // defaults to ['responsive']
+  },
   plugins: [
-    // require('tailwindcss/plugins/container')({
-    //   center: true,
-    //   // padding: '1rem',
-    // }),
+    require('tailwindcss-fluid-container')({
+      componentPrefix: 'c-',  // defaults to 'c-'
+      widthUtilities: true,   // defaults to true
+      paddingUtilities: true, // defaults to true
+      marginUtilities: true,  // defaults to true
+      negativeMarginUtilities: true,  // defaults to true
+    }),
   ],
+
+  // plugins: [
+  //   require('tailwindcss/plugins/container')({
+  //     center: true,
+  //     // padding: '1rem',
+  //   }),
+  // ],
 
   /*
   |-----------------------------------------------------------------------------

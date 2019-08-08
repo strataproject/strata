@@ -2,19 +2,26 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from 'components/layout'
+import Container from 'components/container'
 import Box from 'components/box'
+import Title from 'components/title'
 import Head from 'components/head'
 
 const About = ({ data }) => (
   <Layout>
     <Head pageTitle={data.aboutJson.title} />
-    <Box>
+    <Container>
+      <Box>
+        <Title as="h1" size="large">
+          About %COMPANY
+        </Title>
+      </Box>
       <div
         dangerouslySetInnerHTML={{
           __html: data.aboutJson.content.childMarkdownRemark.html,
         }}
       />
-    </Box>
+    </Container>
     <div style={{ marginTop: '16em' }} />
   </Layout>
 )
