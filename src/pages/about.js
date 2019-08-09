@@ -13,7 +13,7 @@ const About = ({ data }) => (
     <Container>
       <Box>
         <Title as="h1" size="large">
-          About %COMPANY
+          About Overlay
         </Title>
       </Box>
       <div

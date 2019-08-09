@@ -6,7 +6,7 @@ import { FooterContainer } from './footer.css'
 //import Title from 'components/title'
 import Container from 'components/container'
 import Nav from 'components/footer/nav'
-import Logo from './../../images/strata-logo.svg'
+import Logo from './../../images/overlay-logo.svg'
 
 // Example of a component-specific page transition
 // const AnimatedContainer = posed.div({
@@ -27,11 +27,11 @@ import Logo from './../../images/strata-logo.svg'
 const Footer = ({ title }) => (
   <Container>
     <FooterContainer>
-      <div aria-label={title} style={{ width: '16rem', fontSize: '0.75rem' }}>
-        <div style={{ width: '6rem' }}>
+      <div aria-label={title} style={{ maxWidth: '24rem', fontSize: '0.75rem' }}>
+        <div style={{ width: '6rem', paddingTop: '-1.5rem' }}>
           <Logo />
         </div>
-        © All rights reserved. %COMPANY is a project of ING. ING Labs, 10
+        © All rights reserved.<br />Overlay is a project of ING. <br />ING Labs, 10
         Moorgate, London, UK, EC2R 6DA
       </div>
 

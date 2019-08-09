@@ -1,1 +1,1 @@
-# Team
+Full bios of who is involved, coming soon!

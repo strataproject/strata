@@ -5,7 +5,7 @@ import { Link } from 'gatsby'
 import { HeaderContainer } from './header.css'
 //import Title from 'components/title'
 import Nav from 'components/header/nav'
-import Logo from './../../images/strata-logo.svg'
+import Logo from './../../images/overlay-logo.svg'
 
 // Example of a component-specific page transition
 // const AnimatedContainer = posed.div({
