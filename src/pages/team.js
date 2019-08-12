@@ -13,7 +13,7 @@ const Team = ({ data }) => (
     <Container>
       <Box>
         <Title as="h1" size="large">
-          Team
+          The Overlay Team
         </Title>
       </Box>
       <div

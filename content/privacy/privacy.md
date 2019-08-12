@@ -1,6 +1,4 @@
-# Privacy
-
-## About this Privacy Statement
+## About this privacy statement
 
 This Privacy Statement aims to explain in a simple and transparent way what personal data we gather about you and how we process it. It applies to the following people:
 
@@ -207,15 +205,15 @@ We may amend this Privacy Statement to remain compliant with any changes in law 
 
 |Country|Contact details for Data Protection Officer|Data Protection Authority|
 |--- |--- |--- |
-|Australia|customer.service@ing.com.au|Office of the Australian Information Commissioner (OAIC)https://oaic.gov.au/|
-|Belgium|klachten@ing.be|Belgian Privacy Commissionhttp://www.privacycommission.be|
-|Germany||Die Bundesbeauftragte für den Datenschutz und die Informationsfreiheithttp://www.bfdi.bund.de|
-|Hungary|communications.hu@ingbank.com|Hungarian National Authority for Data Protection and Freedom of Informationhttp://www.naih.hu/|
-|Italy|privacy@ingdirect.it|Garante per la protezione dei dati personaliwww.gpdp.itwww.garanteprivacy.itwww.dataprotection.org|
-|Luxembourg||CNPD - Commission Nationale pour la Protection des Donnéeshttps://cnpd.public.lu|
-|Netherlands|privacyloket@ing.nl|Autoriteit Persoonsgegevenshttps://autoriteitpersoonsgegevens.nl/|
+|Australia|customer.service@ing.com.au|Office of the Australian Information Commissioner (OAIC) https://oaic.gov.au/|
+|Belgium|klachten@ing.be|Belgian Privacy Commission http://www.privacycommission.be|
+|Germany||Die Bundesbeauftragte für den Datenschutz und die Informationsfreiheit http://www.bfdi.bund.de|
+|Hungary|communications.hu@ingbank.com|Hungarian National Authority for Data Protection and Freedom of Information http://www.naih.hu/|
+|Italy|privacy@ingdirect.it|Garante per la protezione dei dati personali http://www.gpdp.it http://www.garanteprivacy.it http://www.dataprotection.org|
+|Luxembourg||CNPD - Commission Nationale pour la Protection des Données https://cnpd.public.lu|
+|Netherlands|privacyloket@ing.nl|Autoriteit Persoonsgegevens https://autoriteitpersoonsgegevens.nl/|
 |Philippines||National Privacy Commissionhttps://privacy.gov.ph/|
-|Poland|abi@ingbank.pl|Generalny Inspektor Ochrony Danych Osobowychhttp://www.giodo.gov.pl/|
-|Romania|dpo@ing.ro|National Supervisory Authority for Personal Data Processing (ANSPDCP)http://www.dataprotection.ro/|
-|Slovakia|dpo@ing.sk|Úrad na ochranu osobných údajov Slovenskej republikyhttps://dataprotection.gov.sk/uoou/|
-|Spain|dpo@ing.es|Agencia Española de Protección de Datoshttps://www.agpd.es|
+|Poland|abi@ingbank.pl|Generalny Inspektor Ochrony Danych Osobowych http://www.giodo.gov.pl/|
+|Romania|dpo@ing.ro|National Supervisory Authority for Personal Data Processing (ANSPDCP) http://www.dataprotection.ro/|
+|Slovakia|dpo@ing.sk|Úrad na ochranu osobných údajov Slovenskej republiky https://dataprotection.gov.sk/uoou/|
+|Spain|dpo@ing.es|Agencia Española de Protección de Datos https://www.agpd.es|

@@ -25,19 +25,21 @@ import Logo from './../../images/overlay-logo.svg'
 // })
 
 const Footer = ({ title }) => (
-  <Container>
-    <FooterContainer>
-      <div aria-label={title} style={{ maxWidth: '24rem', fontSize: '0.75rem' }}>
-        <div style={{ width: '6rem', paddingTop: '-1.5rem' }}>
-          <Logo />
+  <div  style={{backgroundColor: '#eed796'}}>
+    <Container>
+      <FooterContainer>
+        <div aria-label={title} style={{ maxWidth: '24rem', fontSize: '0.75rem' }}>
+          <div style={{ width: '6rem', paddingTop: '-1.5rem', mixBlendMode: 'multiply' }}>
+            <Logo />
+          </div>
+          © All rights reserved.<br />Overlay is a project of ING. <br />ING Labs, 10
+          Moorgate, London, UK, EC2R 6DA
         </div>
-        © All rights reserved.<br />Overlay is a project of ING. <br />ING Labs, 10
-        Moorgate, London, UK, EC2R 6DA
-      </div>
 
-      <Nav />
-    </FooterContainer>
-  </Container>
+        <Nav />
+      </FooterContainer>
+    </Container>
+  </div>
 )
 
 Footer.propTypes = {

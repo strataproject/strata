@@ -40,6 +40,7 @@ export default class Signup extends React.Component {
   }
 
   render() {
+    const {style} = this.props
     return (
       <Form
         netlify="netlify"
@@ -49,49 +50,51 @@ export default class Signup extends React.Component {
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         onSubmit={this.handleSubmit}
+        style={style}
       >
-        <input type="hidden" name="form-name" value="strata-early-interest" />
-        <input type="hidden" name="bot-field" onChange={this.handleChange} />
-        <Title as="h2" size="medium">
-          Sign up for early access
-        </Title>
-        <div className="field">
-          <label htmlFor="name" id="name_label">
-            <span>Your name</span>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              onChange={this.handleChange}
-            />
-          </label>
-        </div>
+        <div style={{marginBottom: '6rem', width: 'auto', padding: '2rem', borderRadius: '4px', backgroundColor: '#fafafa'}}>
 
-        <div className="field">
-          <label htmlFor="email" id="email_label">
-            <span>Your email</span>
-            <input
-              type="text"
-              name="email"
-              id="email"
-              onChange={this.handleChange}
-            />
-          </label>
-        </div>
+          <input type="hidden" name="form-name" value="strata-early-interest" />
+          <input type="hidden" name="bot-field" onChange={this.handleChange} />
+          <Title as="h2" size="medium">
+            Sign up to hear more
+          </Title>
+          <div className="field">
+            <label htmlFor="name" id="name_label">
+              <span>Your name</span>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                onChange={this.handleChange}
+              />
+            </label>
+          </div>
 
-        <div className="field">
-          <label htmlFor="company" id="company_label">
-            <span>Your company</span>
-            <input
-              type="text"
-              name="company"
-              id="company"
-              onChange={this.handleChange}
-            />
-          </label>
-        </div>
+          <div className="field">
+            <label htmlFor="email" id="email_label">
+              <span>Your email</span>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                onChange={this.handleChange}
+              />
+            </label>
+          </div>
 
-        <div className="field">
+          <div className="field">
+            <label htmlFor="company" id="company_label">
+              <span>Your company</span>
+              <input
+                type="text"
+                name="company"
+                id="company"
+                onChange={this.handleChange}
+              />
+            </label>
+          </div>
+
           <Button type="submit">Sign up</Button>
         </div>
       </Form>

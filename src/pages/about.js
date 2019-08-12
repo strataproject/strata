@@ -6,6 +6,7 @@ import Container from 'components/container'
 import Box from 'components/box'
 import Title from 'components/title'
 import Head from 'components/head'
+import Text from 'components/text'
 
 const About = ({ data }) => (
   <Layout>
@@ -16,11 +17,13 @@ const About = ({ data }) => (
           About Overlay
         </Title>
       </Box>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: data.aboutJson.content.childMarkdownRemark.html,
-        }}
-      />
+      <Text>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: data.aboutJson.content.childMarkdownRemark.html,
+          }}
+        />
+      </Text>
     </Container>
     <div style={{ marginTop: '16em' }} />
   </Layout>

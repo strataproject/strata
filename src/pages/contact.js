@@ -21,6 +21,9 @@ const Contact = ({ data }) => (
           __html: data.contactJson.content.childMarkdownRemark.html,
         }}
       />
+      <Title as="h1" size="large">
+          <a href='mailto:hello@overlay.earth'>hello@overlay.earth</a>
+        </Title>
     </Container>
   </Layout>
 )

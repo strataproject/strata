@@ -20,21 +20,10 @@ const Layout = ({ data, children }) => (
     <GlobalStyle />
     <Head />
     <Header title={data.site.siteMetadata.siteTitle} />
-    {children}
+    <div style={{minHeight:'100vh'}}>
+      {children}
+    </div>
     <Footer title={data.site.siteMetadata.siteTitle} />
-    {/*<Curves
-      style={{
-        position: 'fixed',
-        zIndex: -1,
-        bottom: '0px',
-        left: '0px',
-        width: '100%',
-        height: '70vh',
-        opacity: '0.35',
-        transform: 'scaleX(-1)',
-      }}
-      alt="Graphic showing curves implying data"
-    />*/}
   </Container>
 )
 
