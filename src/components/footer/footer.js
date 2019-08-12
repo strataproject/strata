@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 //import posed from 'react-pose'
-import { FooterContainer } from './footer.css'
+import { FooterContainer, FooterNav } from './footer.css'
 //import Title from 'components/title'
 import Container from 'components/container'
 import Nav from 'components/footer/nav'
@@ -28,15 +28,18 @@ const Footer = ({ title }) => (
   <div  style={{backgroundColor: '#eed796'}}>
     <Container>
       <FooterContainer>
-        <div aria-label={title} style={{ maxWidth: '24rem', fontSize: '0.75rem' }}>
-          <div style={{ width: '6rem', paddingTop: '-1.5rem', mixBlendMode: 'multiply' }}>
-            <Logo />
+        <FooterNav>
+          <div aria-label={title} style={{ maxWidth: '24rem', fontSize: '0.75rem' }}>
+            <div style={{ width: '6rem', paddingTop: '-1.5rem', mixBlendMode: 'multiply' }}>
+              <Logo />
+            </div>
+            
           </div>
-          © All rights reserved.<br />Overlay is a project of ING. <br />ING Labs, 10
-          Moorgate, London, UK, EC2R 6DA
-        </div>
 
-        <Nav />
+          <Nav />
+        </FooterNav>
+      <p>© All rights reserved.<br />Overlay is a project of ING. <br />ING Labs, 10
+          Moorgate, London, UK, EC2R 6DA</p>
       </FooterContainer>
     </Container>
   </div>
