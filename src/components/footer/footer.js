@@ -6,7 +6,7 @@ import { FooterContainer } from './footer.css'
 //import Title from 'components/title'
 import Container from 'components/container'
 import Nav from 'components/footer/nav'
-import Logo from './../../images/overlay-logo.svg'
+import Logo from './../../images/overlay-logo-decorative.svg'
 
 // Example of a component-specific page transition
 // const AnimatedContainer = posed.div({

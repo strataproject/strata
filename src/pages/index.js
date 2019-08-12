@@ -19,15 +19,19 @@ import Blue from './../images/circle-blue.svg'
 
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
+import {yellow, pink} from 'constants/theme'
 
 const Halves = styled.div`
-  ${tw`flex`}
+  ${tw`lg:flex`}
 `
 
 const Half = styled.div`
-  ${tw`w-full sm:w-1/2 `}
+  ${tw`w-full lg:w-1/2`}
 `
 
+const Hero = styled.div`
+  ${tw`py-2 md:py-4 lg:py-8 xl:py-16 md:max-w-md lg:pr-8`}
+`
 
 const Index = ({ data }) => (
   <Layout>
@@ -37,7 +41,7 @@ const Index = ({ data }) => (
       <div style={{position: 'relative'}}>
         <Halves>
           <Half>
-            <Box>
+            <Hero>
               <Title as="h1" size="large">
                 A new platform to tackle the problem of working with sustainability data
                 at scale.
@@ -48,7 +52,7 @@ const Index = ({ data }) => (
                   __html: data.homeJson.content.childMarkdownRemark.html,
                 }}
               />
-            </Box>
+            </Hero>
           </Half>
           <Half>
             <div style={{mixBlendMode: 'multiply', position: 'relative', padding: '2rem'}}>
@@ -58,6 +62,9 @@ const Index = ({ data }) => (
                 <Blue style={{mixBlendMode: 'multiply', width: '512px', position: 'absolute', top: '0px', left: '30px'}} />
               </div>
             </div>
+            <PatternBox style={{position: 'absolute', width: '25%', height: '12rem'}} fill={yellow} />
+            <PatternBox style={{position: 'absolute', bottom: '18%', right: '0px', width: '33%', height: '6rem'}} fill={pink} />
+
           </Half>
         </Halves>
       </div>

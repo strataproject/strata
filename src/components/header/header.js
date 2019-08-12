@@ -5,7 +5,7 @@ import { Link } from 'gatsby'
 import { HeaderContainer } from './header.css'
 //import Title from 'components/title'
 import Nav from 'components/header/nav'
-import Logo from './../../images/overlay-logo.svg'
+import Logo from './../../images/overlay-logo-decorative.svg'
 
 // Example of a component-specific page transition
 // const AnimatedContainer = posed.div({
@@ -34,7 +34,7 @@ export const Container = styled.div`
 const Header = ({ title }) => (
   <Container>
     <HeaderContainer>
-      <Link to="/" aria-label={title} style={{ width: '10rem' }}>
+      <Link to="/" aria-label={title} style={{ width: '12rem' }}>
         <Logo />
       </Link>
 
