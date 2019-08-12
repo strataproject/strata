@@ -19,7 +19,7 @@ const PatternBox = ({ children, style, fill='#545454' }) => {
   </svg>)
 }
 
-Text.propTypes = {
+PatternBox.propTypes = {
   style: PropTypes.node.isNotRequired,
   fill: PropTypes.node.isNotRequired,
 }
