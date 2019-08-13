@@ -4,7 +4,6 @@ import Layout from 'components/layout'
 import Box from 'components/box'
 import Container from 'components/container'
 import Title from 'components/title'
-import PatternBox from 'components/patternBox'
 import Link from 'gatsby-link'
 import Color from 'color'
 //import Gallery from 'components/gallery'
@@ -13,13 +12,10 @@ import Modal from 'containers/modal'
 import { graphql } from 'gatsby'
 import Signup from 'components/signup'
 import Icon from './../images/overlay-icon.svg'
-import Pink from './../images/circle-pink.svg'
-import Yellow from './../images/circle-yellow.svg'
-import Blue from './../images/circle-blue.svg'
 
+import AnimatedIcon from 'components/animatedIcon'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
-import {yellow, pink} from 'constants/theme'
 
 const Halves = styled.div`
   ${tw`lg:flex`}
@@ -55,16 +51,7 @@ const Index = ({ data }) => (
             </Hero>
           </Half>
           <Half>
-            <div style={{mixBlendMode: 'multiply', position: 'relative', padding: '2rem'}}>
-              <div style={{position: 'relative'}}>
-                <Pink style={{mixBlendMode: 'multiply', width: '512px', position: 'absolute', top: '0px', left: '0px'}} />
-                <Yellow style={{mixBlendMode: 'multiply', width: '512px', position: 'absolute', top: '24px', left: '15px'}}  />
-                <Blue style={{mixBlendMode: 'multiply', width: '512px', position: 'absolute', top: '0px', left: '30px'}} />
-              </div>
-            </div>
-            <PatternBox style={{position: 'absolute', width: '25%', height: '12rem'}} fill={yellow} />
-            <PatternBox style={{position: 'absolute', bottom: '18%', right: '0px', width: '33%', height: '6rem'}} fill={pink} />
-
+            <AnimatedIcon />
           </Half>
         </Halves>
       </div>

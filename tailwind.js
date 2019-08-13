@@ -41,11 +41,10 @@ View the full documentation at https://tailwindcss.com.
 |
 */
 
+const theme = require('./src/constants/theme');
+
 const colors = {
   transparent: 'transparent',
-  sky: '#00b5e2',
-  mint: '#77c095',
-  rose: '#e94a60',
   black: '#22292f',
   'grey-darkest': '#3d4852',
   'grey-darker': '#606f7b',
