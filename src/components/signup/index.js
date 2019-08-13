@@ -57,7 +57,7 @@ export default class Signup extends React.Component {
           <input type="hidden" name="form-name" value="strata-early-interest" />
           <input type="hidden" name="bot-field" onChange={this.handleChange} />
           <Title as="h2" size="medium">
-            Sign up to hear more
+            Register your interest
           </Title>
           <div className="field">
             <label htmlFor="name" id="name_label">
@@ -95,7 +95,7 @@ export default class Signup extends React.Component {
             </label>
           </div>
 
-          <Button type="submit">Sign up</Button>
+          <Button type="submit">Register</Button>
         </div>
       </Form>
     )
