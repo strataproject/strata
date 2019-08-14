@@ -71,7 +71,7 @@ const Index = ({ data }) => (
           </ImageHalf>
           <TextHalf>
             <Hero>
-              <Title as="h1" size="large">
+              <Title as="h1" size="large" theme='blackOnWhite'>
                 A new platform to tackle the problem of working with sustainability data
                 at scale
               </Title>            
@@ -87,6 +87,9 @@ const Index = ({ data }) => (
             </div>
           </ImageHalf>
           <TextHalf>
+            <Title as="h1" size="large" theme='blueOnWhite'>
+              Data for sustainable finance
+            </Title>  
             <p>Our data platform and software tools help financial institutions make use of the latest sustainability data to design the most relevant products for its domestic and commercial real estate clients.</p>
           </TextHalf>
 
@@ -96,6 +99,9 @@ const Index = ({ data }) => (
             </div>
           </ImageHalf>
           <TextHalf>
+            <Title as="h1" size="large" theme='greenOnWhite'>
+              Automated reporting
+            </Title>  
             <p>From selecting the most relevant investments to creating dashboards to make that data usable by multiple stakeholders, Overlay uses automation to rapidly verify, validate and scale sustainable financial products for any financial institution globally. </p>
           </TextHalf>
 

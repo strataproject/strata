@@ -20,8 +20,8 @@ const PatternBox = ({ children, style, fill='#545454' }) => {
 }
 
 PatternBox.propTypes = {
-  style: PropTypes.node.isNotRequired,
-  fill: PropTypes.node.isNotRequired,
+  style: PropTypes.object.isNotRequired,
+  fill: PropTypes.string.isNotRequired,
 }
 
 export default PatternBox
