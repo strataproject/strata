@@ -72,8 +72,7 @@ const Index = ({ data }) => (
           <TextHalf>
             <Hero>
               <Title as="h1" size="large" theme='blackOnWhite'>
-                A new platform to tackle the problem of working with sustainability data
-                at scale
+                A new data platform to tackle the problems of working with sustainability data for finance
               </Title>            
               <p>Dealing with the consequences of climate change means acting more quickly with more data.</p>
               <p>Overlay helps the sustainable finance sector scale up to support its clients in meeting global emissions targets.</p>
