@@ -28,19 +28,30 @@ const Halves = styled.div`
 
     @media (min-width: 30em) {
       display: grid;  
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;
-      div:nth-child(1) { grid-area: 1 / 1 / 1 / 3; }
-      div:nth-child(2) { grid-area: 1 / 3 / 1 / 6; }
-      div:nth-child(3) { grid-area: 2 / 1 / 2 / 2; }
-      div:nth-child(4) { grid-area: 2 / 3 / 2 / 5; }
+      div:nth-child(1) { grid-area: 1 / 1 / 1 / 7; }
+      div:nth-child(2) { grid-area: 1 / 7 / 1 / 13; }
+      div:nth-child(3) { grid-area: 2 / 9 / 2 / 13; }
+      div:nth-child(4) { grid-area: 2 / 2 / 2 / 8; }
+      div:nth-child(5) { grid-area: 3 / 1 / 3 / 7; }
+      div:nth-child(6) { grid-area: 3 / 8 / 3 / 13; }
     }
   }
 `
 
-const Half = styled.div`
+const TextHalf = styled.div`
   @supports not (display: grid) {
     ${tw`w-full lg:w-1/2`}
+  }
+`
+
+const ImageHalf = styled.div`
+  @supports not (display: grid) {
+    ${tw`w-full lg:w-1/2`}
+  }
+  @supports (display: grid) {
+    height: 100%;
   }
 `
 
@@ -53,7 +64,12 @@ const Index = ({ data }) => (
     <Container>
       <div style={{position: 'relative'}}>
         <Halves>
-          <Half>
+          <ImageHalf>
+            <div style={{height: '100%', padding: '2rem'}}>
+              <AnimatedIcon />
+            </div>
+          </ImageHalf>
+          <TextHalf>
             <Hero>
               <Title as="h1" size="large">
                 A new platform to tackle the problem of working with sustainability data
@@ -63,23 +79,27 @@ const Index = ({ data }) => (
               <p>Overlay helps the sustainable finance sector scale up to support its clients in meeting global emissions targets.</p>
               <Button>Register interest</Button>
             </Hero>
-          </Half>
-          <Half>
-            <div style={{height: '612px', padding: '2rem'}}>
+          </TextHalf>
+                 
+          <ImageHalf>
+            <div style={{height: '100%', padding: '2rem'}}>
               <AnimatedIcon />
             </div>
-          </Half>
-          
-          <Half>
-            <div style={{height: '400px'}}>
-              <AnimatedIcon />
-            </div>
-          </Half>
-          <Half>
+          </ImageHalf>
+          <TextHalf>
             <p>Our data platform and software tools help financial institutions make use of the latest sustainability data to design the most relevant products for its domestic and commercial real estate clients.</p>
+          </TextHalf>
 
+          <ImageHalf>
+            <div style={{height: '100%', padding: '2rem'}}>
+              <AnimatedIcon />
+            </div>
+          </ImageHalf>
+          <TextHalf>
             <p>From selecting the most relevant investments to creating dashboards to make that data usable by multiple stakeholders, Overlay uses automation to rapidly verify, validate and scale sustainable financial products for any financial institution globally. </p>
-          </Half>
+          </TextHalf>
+
+
         </Halves>
       </div>
     </Container>

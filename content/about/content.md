@@ -1,6 +1,6 @@
 You can’t change what you can’t measure. And to have an impact on climate change, we’re going to need data. A lot of data. And from a wide variety of different sources. 
 
-Over the next few years, we believe that the global finance industry will need to rapidly scale up to meet the challenge of achieving ambitious global emissions targets. And without data, that’s going to be hard to achieve. That’s where STRATA comes in.
+Over the next few years, we believe that the global finance industry will need to rapidly scale up to meet the challenge of achieving ambitious global emissions targets. And without data, that’s going to be hard to achieve. That’s where Overlay comes in.
 
 We’re building a data platform for gathering, combining, handling and reporting on sustainability data for the financial sector. Combining financial data with impact data will together help finance professionals to identify which assets and projects are suitable for green investment. 
 

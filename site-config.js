@@ -1,10 +1,10 @@
 const path = require('path');
 
 module.exports = {
-  siteTitle: `Strata`,
-  siteTitleShort: `Strata`,
+  siteTitle: `Overlay`,
+  siteTitleShort: `Overlay`,
   siteDescription: `Sustainability data platform`,
-  siteUrl: `https://strata.netlify.com`,
+  siteUrl: `https://overlay.earth`,
   themeColor: `#000`,
   backgroundColor: `#fff`,
   pathPrefix: null,
