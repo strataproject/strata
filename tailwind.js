@@ -41,7 +41,12 @@ View the full documentation at https://tailwindcss.com.
 |
 */
 
-const theme = require('./src/constants/theme');
+const accent = '#138975'
+const pink = '#e682a3'
+const blue = '#14a3c7'
+const yellow = '#edd796'
+const green = '#138975'
+const black = '#11464b'
 
 const colors = {
   transparent: 'transparent',
