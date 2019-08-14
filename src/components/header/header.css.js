@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
+import {green, orange} from '../../constants/theme'
 
 export const HeaderContainer = styled.header`
   ${tw`mx-auto c-container max-w-2xl p-2`}
@@ -13,12 +14,14 @@ export const HeaderContainer = styled.header`
     text-decoration: none;
     letter-spacing: 1px;
     font-weight: bold;
+    padding: 1rem;
+    margin: -1rem;
 
     &:hover {
-      color: #00aa00;
+      color: ${orange};
     }
     &.active {
-      color: #00dd00;
+      color: ${green};
     }
   }
 `

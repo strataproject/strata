@@ -1,27 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
-//import posed from 'react-pose'
 import { HeaderContainer } from './header.css'
-//import Title from 'components/title'
-import Nav from 'components/header/nav'
+import DesktopNav from 'components/header/desktopNav/desktopNav'
+import MobileNav from 'components/header/mobileNav/mobileNav'
 import Logo from './../../images/overlay-logo-decorative.svg'
 
-// Example of a component-specific page transition
-// const AnimatedContainer = posed.div({
-//   enter: {
-//     y: 0,
-//     transition: {
-//       ease: 'easeInOut',
-//     },
-//   },
-//   exit: {
-//     y: '-100%',
-//     transition: {
-//       ease: 'easeInOut',
-//     },
-//   },
-// })
 
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
@@ -30,7 +14,6 @@ export const Container = styled.div`
   ${tw`mx-auto c-container container`}
 `
 
-
 const Header = ({ title }) => (
   <Container>
     <HeaderContainer>
@@ -38,7 +21,10 @@ const Header = ({ title }) => (
         <Logo />
       </Link>
 
-      <Nav />
+      <div>
+        <DesktopNav />
+        <MobileNav />
+      </div>
     </HeaderContainer>
   </Container>
 )

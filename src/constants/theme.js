@@ -28,5 +28,13 @@ export const themes = {
   greenOnWhite: {
     fg: green,
     bg: 'white'
+  },
+  orangeOnWhite: {
+    fg: orange,
+    bg: 'white'
+  },
+  pinkOnWhite: {
+    fg: pink,
+    bg: 'white'
   }
 }

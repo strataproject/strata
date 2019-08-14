@@ -18,4 +18,12 @@ export const Container = styled.nav`
       }
     }
   }
+
+  @media(min-width: 60em) {
+    display: block;
+  }
+
+  @media(max-width: 60em) {
+    display: none;
+  }
 `

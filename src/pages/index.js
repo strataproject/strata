@@ -26,7 +26,7 @@ const Halves = styled.div`
     
     align-items: center;
 
-    @media (min-width: 30em) {
+    @media (min-width: 60em) {
       display: grid;  
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;
@@ -89,7 +89,7 @@ const Index = ({ data }) => (
             <Title as="h1" size="large" theme='blueOnWhite'>
               Data for sustainable finance
             </Title>  
-            <p>Our data platform and software tools help financial institutions make use of the latest sustainability data to design the most relevant products for its domestic and commercial real estate clients.</p>
+            <p>Our data platform and software tools help financial institutions make use of the latest sustainability data to design the most relevant products for domestic and commercial real estate assets.</p>
           </TextHalf>
 
           <ImageHalf>

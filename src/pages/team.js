@@ -12,7 +12,7 @@ const Team = ({ data }) => (
     <Head pageTitle={data.teamJson.title} />
     <Container>
       <Box>
-        <Title as="h1" size="large">
+        <Title as="h1" size="large" theme="orangeOnWhite">
           The Overlay Team
         </Title>
       </Box>

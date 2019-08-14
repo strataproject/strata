@@ -50,7 +50,6 @@ const black = '#11464b'
 
 const colors = {
   transparent: 'transparent',
-  black: '#22292f',
   'grey-darkest': '#3d4852',
   'grey-darker': '#606f7b',
   'grey-dark': '#8795a1',
@@ -59,7 +58,11 @@ const colors = {
   'grey-lighter': '#f1f5f8',
   'grey-lightest': '#f8fafc',
   white: '#ffffff',
-
+  pink,
+  blue,
+  yellow,
+  green,
+  black,
   // 'red-darkest': '#3b0d0c',
   // 'red-darker': '#621b18',
   // 'red-dark': '#cc1f1a',

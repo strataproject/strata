@@ -13,7 +13,7 @@ const About = ({ data }) => (
     <Head pageTitle={data.aboutJson.title} />
     <Container>
       <Box>
-        <Title as="h1" size="large">
+        <Title as="h1" size="large" theme='blueOnWhite'>
           About Overlay
         </Title>
       </Box>

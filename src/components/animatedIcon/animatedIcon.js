@@ -13,7 +13,7 @@ const ParallaxImage = ({ children, style }) => {
   const ref = useRef(null);
   const { scrollY } = useViewportScroll();
 
-  const height = (typeof(window) !== 'undefined') ? window.innerHeight : 0;
+  const height = (typeof(window) !== 'undefined') ? window.innerHeight : -0.1;
   const y = useTransform(scrollY, [elementTop, elementTop + 1], [-0.1, 0.1], {
     clamp: false
   });

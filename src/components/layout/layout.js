@@ -15,15 +15,22 @@ const Container = styled.div`
   ${tw`container mx-auto`}
 `
 
+const NavModal = styled.div`
+  ${tw`absolute w-full`};
+  z-index: 500;
+`
+
 const Layout = ({ data, children }) => (
   <Container>
     <GlobalStyle />
     <Head />
+    <NavModal id="nav_modal" />
     <Header title={data.site.siteMetadata.siteTitle} />
     <div style={{minHeight:'100vh'}}>
       {children}
     </div>
     <Footer title={data.site.siteMetadata.siteTitle} />
+    
   </Container>
 )
 

@@ -1,7 +1,10 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Container } from './nav.css'
+import { Container } from './desktopNav.css'
 
+const items = [
+  
+]
 const Nav = () => (
   <Container>
     <ul>
