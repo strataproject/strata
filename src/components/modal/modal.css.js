@@ -9,6 +9,7 @@ export const Button = styled.button`
   color: #ffffff;
   cursor: pointer;
   font-weight: 500;
+  font-size: 18px;
   padding: 1rem 2rem;
   transition: 0.2s background-color ease;
   ${tw`font-title`}

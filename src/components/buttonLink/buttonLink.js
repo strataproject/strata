@@ -11,6 +11,7 @@ const ButtonLink = styled(Link)`
   cursor: pointer;
   font-family: inherit;
   font-weight: 500;
+  font-size: 18px;
   padding: 1rem 2rem;
   transition: 0.2s background-color ease;
   ${tw`font-title`}
