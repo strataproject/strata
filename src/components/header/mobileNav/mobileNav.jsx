@@ -39,18 +39,9 @@ class MobileNav extends Component {
   }
 
   render() {
-    const { color } = this.props
+    const { color, menu } = this.props
     const { open, hidden } = this.state
     const { setClosed, setOpen, toggle } = this
-
-    const menu = [
-      { to: '/', label: 'Home' },
-      { to: '/about', label: 'About' },
-      { to: '/blog', label: 'Blog' },
-      { to: '/team', label: 'Team' },
-      { to: '/contact', label: 'Contact' },
-    ]
-
     const items = menu.map(item => {
       const element = (
         <NavItem style={{ color: 'white', fontStyle: 'normal' }} to={item.to} onClick={setClosed}>
@@ -85,10 +76,12 @@ export default MobileNav
 
 MobileNav.propTypes = {
   color: PropTypes.string,
+  menu: PropTypes.array,
 }
 
 MobileNav.defaultProps = {
   color: 'rose',
+  menu: []
 }
 
 MobileNav.defaultState = {

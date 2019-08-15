@@ -13,28 +13,28 @@ export const colors = {
   yellow,
   green,
   black,
-  orange
+  orange,
 }
 
 export const themes = {
   blueOnWhite: {
     fg: blue,
-    bg: 'white'
+    bg: 'white',
   },
   blackOnWhite: {
     fg: black,
-    bg: 'white'
+    bg: 'white',
   },
   greenOnWhite: {
     fg: green,
-    bg: 'white'
+    bg: 'white',
   },
   orangeOnWhite: {
     fg: orange,
-    bg: 'white'
+    bg: 'white',
   },
   pinkOnWhite: {
     fg: pink,
-    bg: 'white'
-  }
+    bg: 'white',
+  },
 }

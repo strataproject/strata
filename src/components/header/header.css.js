@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
-import {green, orange} from '../../constants/theme'
+import { green, orange } from '../../constants/theme'
 
 export const HeaderContainer = styled.header`
   ${tw`mx-auto c-container max-w-2xl p-2`}

@@ -909,14 +909,14 @@ module.exports = {
 
   theme: {
     screens: {
-      'sm': '640px',
+      sm: '640px',
     },
     fluidContainer: {
-      'default': {
+      default: {
         maxWidth: '1200px',   // defaults to null (no maximum width)
         padding: '15px',      // defaults to '15px'
         responsivePadding: {  // defaults to {}
-          'sm': '30px',       // at screen 'sm', the padding will change to 30px
+          sm: '30px',       // at screen 'sm', the padding will change to 30px
         },
       },
     },

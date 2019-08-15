@@ -53,7 +53,10 @@ const Head = ({
     <meta content={canonical} property="og:url" />
     <meta content={canonical} name="twitter:url" />
     <link rel="canonical" href={canonical} />
-    <link href="https://fonts.googleapis.com/css?family=Red+Hat+Display|Red+Hat+Text&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Red+Hat+Display|Red+Hat+Text&display=swap"
+      rel="stylesheet"
+    />
 
     <meta content={imageUrl || `${siteUrl}/social.png`} property="og:image" />
     <meta content="1024" property="og:image:width" />

@@ -3,6 +3,7 @@ import { navigateTo } from 'gatsby-link'
 import Form from 'components/form'
 import Title from 'components/title'
 import { Button } from './../modal/modal.css'
+import PropTypes from 'prop-types'
 
 function encode(data) {
   return Object.keys(data)
@@ -40,7 +41,7 @@ export default class Signup extends React.Component {
   }
 
   render() {
-    const {style} = this.props
+    const { style } = this.props
     return (
       <Form
         netlify="netlify"
@@ -52,8 +53,15 @@ export default class Signup extends React.Component {
         onSubmit={this.handleSubmit}
         style={style}
       >
-        <div style={{marginBottom: '6rem', width: 'auto', padding: '2rem', borderRadius: '4px', backgroundColor: '#fafafa'}}>
-
+        <div
+          style={{
+            marginBottom: '6rem',
+            width: 'auto',
+            padding: '2rem',
+            borderRadius: '4px',
+            backgroundColor: '#fafafa',
+          }}
+        >
           <input type="hidden" name="form-name" value="strata-early-interest" />
           <input type="hidden" name="bot-field" onChange={this.handleChange} />
           <Title as="h2" size="medium">
@@ -100,4 +108,8 @@ export default class Signup extends React.Component {
       </Form>
     )
   }
+}
+
+Signup.propTypes = {
+  style: PropTypes.object,
 }

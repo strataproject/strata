@@ -16,15 +16,15 @@ const Contact = ({ data }) => (
           Contact
         </Title>
       </Box>
-      
+
       <Title as="h1" size="large">
         <span
           dangerouslySetInnerHTML={{
             __html: data.contactJson.content.childMarkdownRemark.html,
           }}
         />
-          <a href='mailto:hello@overlay.earth'>hello@overlay.earth</a>
-        </Title>
+        <a href="mailto:hello@overlay.earth">hello@overlay.earth</a>
+      </Title>
     </Container>
   </Layout>
 )

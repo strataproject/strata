@@ -24,7 +24,7 @@ export const MobileNavContainer = styled.div`
     display: none;
   }
 
-  @media(max-width: 60em) {
+  @media (max-width: 60em) {
     display: block;
   }
 `
