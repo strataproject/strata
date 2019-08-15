@@ -12,11 +12,11 @@ import Modal from 'containers/modal'
 import { graphql } from 'gatsby'
 import Signup from 'components/signup'
 import Icon from './../images/overlay-icon.svg'
-
+import Hero from 'components/hero/hero.css'
 import AnimatedIcon from 'components/animatedIcon'
+import ButtonLink from 'components/buttonLink'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
-import { Button } from 'components/modal/modal.css'
 
 const Halves = styled.div`
   @supports not (display: grid) {
@@ -55,9 +55,7 @@ const ImageHalf = styled.div`
   }
 `
 
-const Hero = styled.div`
-  ${tw`py-2 md:py-4 lg:py-8 xl:py-16 md:max-w-md lg:pr-8`}
-`
+
 
 const Index = ({ data }) => (
   <Layout>
@@ -76,7 +74,7 @@ const Index = ({ data }) => (
               </Title>            
               <p>Dealing with the consequences of climate change means acting more quickly with more data.</p>
               <p>Overlay helps the sustainable finance sector scale up to support its clients in meeting global emissions targets.</p>
-              <Button>Register interest</Button>
+              <ButtonLink to='/signup'>Register interest</ButtonLink>
             </Hero>
           </TextHalf>
                  
