@@ -40,8 +40,8 @@ export const AnimatedMobileMenu = ({ menu }) => {
       ref={containerRef}
     >
       <motion.div className="background" variants={sidebar} />
-      <Navigation menu={menu} />
-      <MenuToggle toggle={() => toggleOpen()} />
+      <Navigation menu={menu}  />
+      <MenuToggle isOpen={isOpen} toggle={() => toggleOpen()} />
     </motion.nav>
     </div>
   )

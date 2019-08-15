@@ -12,8 +12,8 @@ const Path = props => (
   />
 )
 
-export const MenuToggle = ({ toggle }) => (
-  <MenuToggleButton onClick={toggle}>
+export const MenuToggle = ({ toggle, isOpen }) => (
+  <MenuToggleButton onClick={toggle} role="switch" aria-checked={isOpen} name="Toggle menu">
     <svg width="23" height="23" viewBox="0 0 23 23">
       <Path
         variants={{
@@ -41,4 +41,5 @@ export const MenuToggle = ({ toggle }) => (
 
 MenuToggle.propTypes = {
   toggle: PropTypes.func,
+  isOpen: PropTypes.bool
 }
