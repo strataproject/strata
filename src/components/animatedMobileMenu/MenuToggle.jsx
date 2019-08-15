@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { motion } from 'framer-motion'
 import PropTypes from 'prop-types'
-
+import { MenuToggleButton } from './MenuToggle.css'
 const Path = props => (
   <motion.path
     fill="transparent"
@@ -13,7 +13,7 @@ const Path = props => (
 )
 
 export const MenuToggle = ({ toggle }) => (
-  <button onClick={toggle}>
+  <MenuToggleButton onClick={toggle}>
     <svg width="23" height="23" viewBox="0 0 23 23">
       <Path
         variants={{
@@ -36,7 +36,7 @@ export const MenuToggle = ({ toggle }) => (
         }}
       />
     </svg>
-  </button>
+  </MenuToggleButton>
 )
 
 MenuToggle.propTypes = {

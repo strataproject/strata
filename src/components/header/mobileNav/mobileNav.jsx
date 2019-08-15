@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Menu from './menu.jsx'
+import { AnimatedMobileMenu } from 'components/animatedMobileMenu/AnimatedMobileMenu'
+
 import {
   MobileNavContainer,
   NavItem,
@@ -66,7 +68,10 @@ class MobileNav extends Component {
 
     return (
       <MobileNavContainer>
-        <StyledNav color={color}>
+        <div style={{position: 'relative', height: '2rem'}}>
+            <AnimatedMobileMenu menu={menu} />
+          </div>
+        {/*<StyledNav color={color}>
           <StyledNavContent onClick={toggle}>
             <StyledNavButton
               color={color}
@@ -79,7 +84,7 @@ class MobileNav extends Component {
         </StyledNav>
         <ModalMenu>
           <Menu color={color} open={open} hidden={hidden} items={items} />
-        </ModalMenu>
+        </ModalMenu>*/}
       </MobileNavContainer>
     )
   }
