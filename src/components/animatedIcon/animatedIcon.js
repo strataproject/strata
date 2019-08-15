@@ -38,20 +38,9 @@ const ParallaxImage = ({ children, style }) => {
       return 1
     }
   })
-  // const opacity = useTransform(scrollY, value => {
-  //   console.log({elementTop, value})
-  //   const result = (400 - Math.abs(elementTop - value))/4
-  //   console.log(result)
-  //   return result
-  // })
 
   useLayoutEffect(() => {
     const element = ref.current
-    console.log({
-      element,
-      offsetTop: element.offsetTop,
-      rect: element.getBoundingClientRect(),
-    })
     setElementTop(element.getBoundingClientRect().top)
   }, [ref])
 
@@ -62,7 +51,12 @@ const ParallaxImage = ({ children, style }) => {
   )
 }
 
-const AnimatedIcon = ({ children }) => {
+ParallaxImage.propTypes = {
+  children: PropTypes.node,
+  style: PropTypes.object,
+}
+
+const AnimatedIcon = () => {
   const { scrollYProgress } = useViewportScroll()
   const scale = useTransform(scrollYProgress, [0, 1], [0.5, 1])
   return (

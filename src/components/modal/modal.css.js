@@ -8,10 +8,13 @@ export const Button = styled.button`
   border: none;
   color: #ffffff;
   cursor: pointer;
-  font-family: inherit;
   font-weight: 500;
   padding: 1rem 2rem;
   transition: 0.2s background-color ease;
+  ${tw`font-title`}
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
 
   &:active,
   &:focus {

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import { Container } from './desktopNav.css'
 
@@ -15,5 +16,9 @@ const Nav = ({ menu }) => (
     </ul>
   </Container>
 )
+
+Nav.propTypes = {
+  menu: PropTypes.array.isRequired,
+}
 
 export default Nav

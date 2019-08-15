@@ -3,7 +3,7 @@ import tw from 'tailwind.macro'
 import { green, orange } from '../../constants/theme'
 
 export const HeaderContainer = styled.header`
-  ${tw`mx-auto c-container max-w-2xl p-2`}
+  ${tw`mx-auto c-container max-w-3xl p-2`}
   display: flex;
   justify-content: space-between;
   align-items: center;

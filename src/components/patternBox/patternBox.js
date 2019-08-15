@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import stringify from 'virtual-dom-stringify'
 import circles from 'svg-patterns/p/circles'
 
-const PatternBox = ({ children, style, fill = '#545454' }) => {
+const PatternBox = ({ style, fill = '#545454' }) => {
   const pattern = circles({
     size: 15, // size of the pattern
     radius: 3,

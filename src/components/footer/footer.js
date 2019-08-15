@@ -1,59 +1,53 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
-//import posed from 'react-pose'
 import { FooterContainer, FooterNav } from './footer.css'
-//import Title from 'components/title'
 import Container from 'components/container'
 import Nav from 'components/footer/nav'
 import Logo from './../../images/overlay-logo-decorative.svg'
-
-// Example of a component-specific page transition
-// const AnimatedContainer = posed.div({
-//   enter: {
-//     y: 0,
-//     transition: {
-//       ease: 'easeInOut',
-//     },
-//   },
-//   exit: {
-//     y: '-100%',
-//     transition: {
-//       ease: 'easeInOut',
-//     },
-//   },
-// })
+import { green, blue, yellow } from '../../constants/theme'
 
 const Footer = ({ title }) => (
-  <div style={{ backgroundColor: '#eed796' }}>
-    <Container>
-      <FooterContainer>
-        <FooterNav>
-          <div
-            aria-label={title}
-            style={{ maxWidth: '24rem', fontSize: '0.75rem' }}
-          >
+  <div>
+    <div style={{ backgroundColor: 'white' }}>
+      <Container>
+        <FooterContainer></FooterContainer>
+      </Container>
+    </div>
+    <div style={{ backgroundColor: green }}>
+      <Container>
+        <FooterContainer></FooterContainer>
+      </Container>
+    </div>
+    <div style={{ backgroundColor: yellow }}>
+      <Container>
+        <FooterContainer>
+          <FooterNav>
             <div
-              style={{
-                width: '6rem',
-                paddingTop: '-1.5rem',
-                mixBlendMode: 'multiply',
-              }}
+              aria-label={title}
+              style={{ maxWidth: '24rem', fontSize: '0.75rem' }}
             >
-              <Logo />
+              <div
+                style={{
+                  width: '6rem',
+                  paddingTop: '-1.5rem',
+                  mixBlendMode: 'multiply',
+                }}
+              >
+                <Logo />
+              </div>
             </div>
-          </div>
 
-          <Nav />
-        </FooterNav>
-        <p>
-          © All rights reserved.
-          <br />
-          Overlay is a project of ING. <br />
-          ING Labs, 10 Moorgate, London, UK, EC2R 6DA
-        </p>
-      </FooterContainer>
-    </Container>
+            <Nav />
+          </FooterNav>
+          <p style={{ opacity: '0.5' }}>
+            © All rights reserved.
+            <br />
+            Overlay is a project of ING. <br />
+            ING Labs, 10 Moorgate, London, UK, EC2R 6DA
+          </p>
+        </FooterContainer>
+      </Container>
+    </div>
   </div>
 )
 

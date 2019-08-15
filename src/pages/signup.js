@@ -6,7 +6,7 @@ import Title from 'components/title'
 import Container from 'components/container'
 import Head from 'components/head'
 import Signup from 'components/signup'
-
+// eslint-disable-next-line
 const SignupPage = ({ data }) => (
   <Layout>
     <Head pageTitle="Register your interest" />

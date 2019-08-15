@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 import { HeaderContainer } from './header.css'
 import DesktopNav from 'components/header/desktopNav/desktopNav'
 import MobileNav from 'components/header/mobileNav/mobileNav'
+import { AnimatedMobileMenu } from 'components/animatedMobileMenu/AnimatedMobileMenu'
 import Logo from './../../images/overlay-logo-decorative.svg'
 
 import styled from 'styled-components'
@@ -29,9 +30,12 @@ const Header = ({ title }) => {
 
         <div>
           <DesktopNav menu={menu} />
-          <MobileNav menu={menu} />
+          <div style={{position: 'relative', height: '2rem'}}>
+            <AnimatedMobileMenu menu={menu} />
+          </div>
         </div>
       </HeaderContainer>
+      
     </Container>
   )
 }

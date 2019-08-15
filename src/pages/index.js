@@ -9,7 +9,7 @@ import Hero from 'components/hero/hero.css'
 import AnimatedIcon from 'components/animatedIcon'
 import ButtonLink from 'components/buttonLink'
 import { ImageHalf, TextHalf, Halves } from 'components/halves'
-
+// eslint-disable-next-line
 const Index = ({ data }) => (
   <Layout>
     <Container>
@@ -76,7 +76,13 @@ const Index = ({ data }) => (
     </Container>
 
     <Container>
-      <Signup style={{ margin: 'auto' }} />
+      <Signup
+        style={{
+          marginLeft: 'auto',
+          marginRight: 'auto',
+          marginBottom: '6rem',
+        }}
+      />
     </Container>
   </Layout>
 )

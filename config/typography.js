@@ -12,7 +12,7 @@ const typography = new Typography({
   baseLineHeight: 1.45,
   bodyColor: 'hsla(0,0%,0%,0.8)',
   headerFontFamily: [
-    'Red Hat Display',
+    'Lexend Deca', //'Muli',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',

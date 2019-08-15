@@ -1,7 +1,7 @@
 import React from 'react'
 import AppProvider from 'store/provider'
 import {
-  wrapPageElementWithTransition, 
+  wrapPageElementWithTransition,
   wrapPageElementWithoutTransition,
 } from 'helpers/wrapPageElement'
 import 'typeface-inter'
@@ -11,6 +11,8 @@ import 'typeface-muli'
 export const wrapRootElement = ({ element }) => {
   return <AppProvider>{element}</AppProvider>
 }
+
+wrapPageElementWithTransition
 
 // Page Transitions
 //export const unusedWrapPageElement = wrapPageElementWithTransition

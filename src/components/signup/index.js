@@ -4,6 +4,7 @@ import Form from 'components/form'
 import Title from 'components/title'
 import { Button } from './../modal/modal.css'
 import PropTypes from 'prop-types'
+import { yellow } from '../../constants/theme'
 
 function encode(data) {
   return Object.keys(data)
@@ -22,7 +23,6 @@ export default class Signup extends React.Component {
   }
 
   handleSubmit = e => {
-    console.log(e)
     e.preventDefault()
     const form = e.target
     if (typeof window.analytics !== 'undefined') {
@@ -55,16 +55,12 @@ export default class Signup extends React.Component {
       >
         <div
           style={{
-            marginBottom: '6rem',
             width: 'auto',
-            padding: '2rem',
-            borderRadius: '4px',
-            backgroundColor: '#fafafa',
           }}
         >
           <input type="hidden" name="form-name" value="strata-early-interest" />
           <input type="hidden" name="bot-field" onChange={this.handleChange} />
-          <Title as="h2" size="medium">
+          <Title as="h1" size="medium">
             Register your interest
           </Title>
           <div className="field">

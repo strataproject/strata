@@ -1,10 +1,13 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
-import { Link } from 'gatsby'
-import ReactDOM from 'react-dom'
 import Menu from './menu.jsx'
-import {Bar, BarRow, MobileNavContainer, NavItem, StyledNavButton, StyledNav, StyledNavContent } from './mobileNav.css'
+import {
+  MobileNavContainer,
+  NavItem,
+  StyledNavButton,
+  StyledNav,
+  StyledNavContent,
+} from './mobileNav.css'
 import Hamburger from './hamburger'
 import ModalMenu from './modalMenu'
 
@@ -41,11 +44,17 @@ class MobileNav extends Component {
   render() {
     const { color, menu } = this.props
     const { open, hidden } = this.state
-    const { setClosed, setOpen, toggle } = this
+    const { setClosed, toggle } = this
     const items = menu.map(item => {
       const element = (
-        <NavItem style={{ color: 'white', fontStyle: 'normal' }} to={item.to} onClick={setClosed}>
-          <h2 style={{ textDecoration: 'none', color: 'white' }}>{item.label}</h2>
+        <NavItem
+          style={{ color: 'white', fontStyle: 'normal' }}
+          to={item.to}
+          onClick={setClosed}
+        >
+          <h2 style={{ textDecoration: 'none', color: 'white' }}>
+            {item.label}
+          </h2>
         </NavItem>
       )
 
@@ -59,7 +68,11 @@ class MobileNav extends Component {
       <MobileNavContainer>
         <StyledNav color={color}>
           <StyledNavContent onClick={toggle}>
-            <StyledNavButton color={color} onClick={toggle} aria-label="Main menu">
+            <StyledNavButton
+              color={color}
+              onClick={toggle}
+              aria-label="Main menu"
+            >
               <Hamburger open={open} />
             </StyledNavButton>
           </StyledNavContent>
@@ -81,7 +94,7 @@ MobileNav.propTypes = {
 
 MobileNav.defaultProps = {
   color: 'rose',
-  menu: []
+  menu: [],
 }
 
 MobileNav.defaultState = {

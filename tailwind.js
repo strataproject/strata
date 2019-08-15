@@ -41,7 +41,6 @@ View the full documentation at https://tailwindcss.com.
 |
 */
 
-const accent = '#138975'
 const pink = '#e682a3'
 const blue = '#14a3c7'
 const yellow = '#edd796'
@@ -198,7 +197,7 @@ module.exports = {
 
   fonts: {
     sans: [
-      'Muli',
+      'Lexend Deca',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
@@ -214,6 +213,21 @@ module.exports = {
     ],
     body: [
       'Inter',
+      'system-ui',
+      'BlinkMacSystemFont',
+      '-apple-system',
+      'Segoe UI',
+      'Roboto',
+      'Oxygen',
+      'Ubuntu',
+      'Cantarell',
+      'Fira Sans',
+      'Droid Sans',
+      'Helvetica Neue',
+      'sans-serif',
+    ],
+    title: [
+      'Lexend Deca',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
@@ -913,24 +927,26 @@ module.exports = {
     },
     fluidContainer: {
       default: {
-        maxWidth: '1200px',   // defaults to null (no maximum width)
-        padding: '15px',      // defaults to '15px'
-        responsivePadding: {  // defaults to {}
-          sm: '30px',       // at screen 'sm', the padding will change to 30px
+        maxWidth: '1200px', // defaults to null (no maximum width)
+        padding: '15px', // defaults to '15px'
+        responsivePadding: {
+          // defaults to {}
+          sm: '30px', // at screen 'sm', the padding will change to 30px
         },
       },
     },
   },
-  variants: { // for the utilities
+  variants: {
+    // for the utilities
     fluidContainer: ['responsive'], // defaults to ['responsive']
   },
   plugins: [
     require('tailwindcss-fluid-container')({
-      componentPrefix: 'c-',  // defaults to 'c-'
-      widthUtilities: true,   // defaults to true
+      componentPrefix: 'c-', // defaults to 'c-'
+      widthUtilities: true, // defaults to true
       paddingUtilities: true, // defaults to true
-      marginUtilities: true,  // defaults to true
-      negativeMarginUtilities: true,  // defaults to true
+      marginUtilities: true, // defaults to true
+      negativeMarginUtilities: true, // defaults to true
     }),
   ],
 

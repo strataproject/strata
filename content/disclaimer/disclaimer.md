@@ -1,5 +1,3 @@
-# Disclaimer
-
 ## General
 
 This website of Overlay is intended for general information purposes. This website provides basic information concerning the possible future(financial) services offered by Overlay. By accessing this website and the materials and information contained herein, you acknowledge that you have read, understand, accept and agree to be bound by the Terms and Conditions that follow.

@@ -13,7 +13,10 @@ const ButtonLink = styled(Link)`
   font-weight: 500;
   padding: 1rem 2rem;
   transition: 0.2s background-color ease;
-
+  ${tw`font-title`}
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
   &:active,
   &:focus {
     box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);

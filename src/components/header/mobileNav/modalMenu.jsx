@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import ReactDOM from 'react-dom'
 
 // Reliant on nav_modal being present in Layout.jsx
@@ -18,7 +19,7 @@ class ModalMenu extends Component {
   }
 
   componentWillUnmount() {
-    if(navModalRoot) {
+    if (navModalRoot) {
       navModalRoot.removeChild(this.el)
     }
   }
@@ -29,6 +30,10 @@ class ModalMenu extends Component {
     }
     return ReactDOM.createPortal(this.props.children, this.el)
   }
+}
+
+ModalMenu.propTypes = {
+  children: PropTypes.node,
 }
 
 export default ModalMenu

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { green } from '../../../constants/theme'
 
 import tw from 'tailwind.macro'
 
@@ -15,6 +16,21 @@ export const Container = styled.nav`
 
       & + li {
         margin-left: 1rem;
+      }
+
+      a {
+        color: rgba(64, 64, 64, 0.5);
+        transition: color 0.2s ease;
+        text-decoration: none;
+        letter-spacing: 1px;
+        font-weight: bold;
+
+        &:hover {
+          color: ${green};
+        }
+        &.active {
+          color: ${green};
+        }
       }
     }
   }
