@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import Menu from './menu.jsx'
+//import Menu from './menu.jsx'
 import { AnimatedMobileMenu } from 'components/animatedMobileMenu/AnimatedMobileMenu'
 
 import {
@@ -10,8 +10,8 @@ import {
   StyledNav,
   StyledNavContent,
 } from './mobileNav.css'
-import Hamburger from './hamburger'
-import ModalMenu from './modalMenu'
+//import Hamburger from './hamburger'
+//import ModalMenu from './modalMenu'
 
 class MobileNav extends Component {
   state = {

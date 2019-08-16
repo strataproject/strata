@@ -88,6 +88,36 @@ module.exports = {
         trackPage: true,
       },
     },
-    
+    {
+    resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: "./src/images/overlay-icon@2x.png",
+   
+        // WebApp Manifest Configuration
+        appName: null, // Inferred with your package.json
+        appDescription: 'A new data platform for sustainable finance',
+        developerName: 'Stef Lewandowski',
+        developerURL: 'https://stef.io',
+        dir: 'auto',
+        lang: 'en-US',
+        background: '#fff',
+        theme_color: '#fff',
+        display: 'standalone',
+        orientation: 'any',
+        start_url: '/?homescreen=1',
+        version: '1.0',
+   
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          yandex: false,
+          windows: false
+        }
+      }
+    }
   ],
 }
