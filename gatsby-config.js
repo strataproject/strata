@@ -89,9 +89,16 @@ module.exports = {
     //   },
     // },
     {
+        resolve: 'gatsby-plugin-webpack-bundle-analyzer',
+        options: {
+            analyzerPort: 8008,
+            production: false,
+        },
+    },
+    {
     resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: "./src/images/overlay-icon@2x.png",
+        logo: "./src/images/overlay-icon-1500-circle.png",
    
         // WebApp Manifest Configuration
         appName: null, // Inferred with your package.json
