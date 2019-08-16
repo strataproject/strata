@@ -76,13 +76,15 @@ const Index = ({ data }) => (
     </Container>
 
     <Container>
-      <Signup
-        style={{
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          marginBottom: '6rem',
-        }}
-      />
+      <div style={{marginTop: '8rem'}}>
+        <Signup
+          style={{
+            marginLeft: 'auto',
+            marginRight: 'auto',
+            marginBottom: '6rem',
+          }}
+        />
+      </div>
     </Container>
   </Layout>
 )

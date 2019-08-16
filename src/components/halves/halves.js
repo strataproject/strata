@@ -47,4 +47,7 @@ export const ImageHalf = styled.div`
     position: relative;
     width: 100%;
   }
+  @media(max-width: 60rem) {
+    margin-bottom: -4rem;
+  }
 `
