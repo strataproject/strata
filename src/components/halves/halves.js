@@ -18,10 +18,10 @@ export const Halves = styled.div`
         grid-area: 1 / 7 / 1 / 13;
       }
       div:nth-child(3) {
-        grid-area: 2 / 9 / 2 / 13;
+        grid-area: 2 / 8 / 2 / 13;
       }
       div:nth-child(4) {
-        grid-area: 2 / 2 / 2 / 8;
+        grid-area: 2 / 1 / 2 / 8;
       }
       div:nth-child(5) {
         grid-area: 3 / 1 / 3 / 7;
@@ -44,6 +44,7 @@ export const ImageHalf = styled.div`
     ${tw`w-full lg:w-1/2`}
   }
   @supports (display: grid) {
-    height: 100%;
+    position: relative;
+    width: 100%;
   }
 `

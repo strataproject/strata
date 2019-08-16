@@ -7,6 +7,9 @@ import BlueCircle from '../../images/circle-blue.svg'
 import PinkRhombus from '../../images/rhombus-pink.svg'
 import YellowRhombus from '../../images/rhombus-yellow.svg'
 import BlueRhombus from '../../images/rhombus-blue.svg'
+import PinkHexagon from '../../images/hexagon-pink.svg'
+import YellowHexagon from '../../images/hexagon-yellow.svg'
+import BlueHexagon from '../../images/hexagon-blue.svg'
 import { yellow, pink } from 'constants/theme'
 import { motion, useViewportScroll, useTransform } from 'framer-motion'
 import PatternBox from 'components/patternBox'
@@ -122,7 +125,7 @@ const CircleIcon = ({ scale }) => (
     </div>
   </div>)
 
-const RhombusIcon = ({ scale }) => (
+const HexagonIcon = ({ scale }) => (
   <div style={{ position: 'relative' }}>
     <div
       style={{
@@ -134,15 +137,76 @@ const RhombusIcon = ({ scale }) => (
         left: '0px',
       }}
     >
-      <motion.div>
+      <motion.div style={{ transform: `translateY(${scale}px)` }}>
         <motion.div
-          initial={{ translateY: '33.333%' }}
-          animate={{ translateY: '0%' }}
-          transition={{ ease: 'easeInOut', yoyo: Infinity, duration: 4 }}
-          
+          initial={{ rotate: '0deg' }}
+          animate={{ rotate: '360deg' }}
+          transition={{ ease: 'easeInOut', duration: 4, loop: Infinity }}
+          style={{ originX: '49%', originY: '49%', width: '100%' }}
         >
-          <PinkRhombus style={{ mixBlendMode: 'multiply', width: '100%' }} />
+          <PinkHexagon style={{ mixBlendMode: 'multiply', width: '100%' }} />
         </motion.div>
+      </motion.div>
+    </div>
+    <div
+      style={{
+        mixBlendMode: 'multiply',
+        width: '100%',
+        position: 'absolute',
+        zIndex: '-1',
+        top: '24px',
+        left: '15px',
+      }}
+    >
+      <motion.div
+        initial={{ rotate: '0deg' }}
+        animate={{ rotate: '360deg' }}
+        transition={{ ease: 'easeInOut', duration: 5, loop: Infinity }}
+        style={{ originX: '49%', originY: '49%', width: '100%' }}
+      >
+        <YellowHexagon style={{ mixBlendMode: 'multiply', width: '100%' }} />
+      </motion.div>
+    </div>
+    <div
+      style={{
+        mixBlendMode: 'multiply',
+        width: '100%',
+        position: 'absolute',
+        zIndex: '-1',
+        top: '0px',
+        left: '30px',
+      }}
+    >
+      <motion.div
+        initial={{ rotate: '0deg' }}
+        animate={{ rotate: '360deg' }}
+        transition={{ ease: 'easeInOut', duration: 6, loop: Infinity }}
+        style={{ originX: '49%', originY: '49%', width: '100%' }}
+      >
+        <BlueHexagon style={{ mixBlendMode: 'multiply', width: '100%' }} />
+      </motion.div>
+    </div>
+  </div>)
+
+const RhombusIcon = ({ scale }) => (
+  <div style={{ position: 'relative' }}>
+    <div
+      style={{
+        mixBlendMode: 'multiply',
+        position: 'absolute',
+        zIndex: '-1',
+        top: '0px',
+        left: '0px',
+        right: '0px',
+        bottom: '0px',
+      }}
+    >
+      <motion.div
+        initial={{ translateY: '33.333%' }}
+        animate={{ translateY: '0%' }}
+        transition={{ ease: 'easeInOut', yoyo: Infinity, duration: 4 }}          
+      >
+        <PinkRhombus style={{ mixBlendMode: 'multiply', width: '100%' }} />
       </motion.div>
     </div>
     <div
@@ -191,6 +255,8 @@ const AnimatedIcon = ({ shape }) => {
 
   if(shape == 'rhombus') {
     ShapeIcon = RhombusIcon
+  } else if(shape == 'hexagon') {
+    ShapeIcon = HexagonIcon
   }
   return (
     <div
