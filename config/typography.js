@@ -1,6 +1,6 @@
 import Typography from 'typography'
 
-import 'typeface-muli'
+//import 'typeface-muli'
 import 'typeface-inter'
 
 // This website uses the system font stack after the placed "Montserrat" and "Source Sans Pro" fonts
