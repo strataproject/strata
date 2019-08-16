@@ -5876,9 +5876,9 @@ fastq@^1.6.0:
   dependencies:
     reusify "^1.0.0"
 
-"favicons-webpack-plugin@git+https://github.com/Creatiwity/favicons-webpack-plugin.git#0872de414061baaad0a2853c77ae75bc38b8bbbf":
+"favicons-webpack-plugin@https://github.com/Creatiwity/favicons-webpack-plugin.git#0872de414061baaad0a2853c77ae75bc38b8bbbf":
   version "0.0.9"
-  resolved "git+https://github.com/Creatiwity/favicons-webpack-plugin.git#0872de414061baaad0a2853c77ae75bc38b8bbbf"
+  resolved "https://github.com/Creatiwity/favicons-webpack-plugin.git#0872de414061baaad0a2853c77ae75bc38b8bbbf"
   dependencies:
     core-js "^2.5.7"
     favicons "^5.1.1"
@@ -6521,11 +6521,6 @@ gatsby-plugin-react-svg@^2.1.2:
   dependencies:
     svg-react-loader "^0.4.4"
 
-gatsby-plugin-segment-js@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-segment-js/-/gatsby-plugin-segment-js-3.0.1.tgz#a31380515c97af2f7e7bf4be7aea071b6222f9a5"
-  integrity sha512-pDGx0kE36FDd2aQAwMr4mrY93CedlIuotprvdRQKBuBrWfvQ7DMCQxwpDYPWrwatVJhdf5idnl4Xct0I4WkKRg==
-
 gatsby-plugin-sharp@^2.2.10:
   version "2.2.10"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.2.10.tgz#94f3f62faa939a1337baa168b1735ce9381b4c50"
@@ -6589,14 +6584,6 @@ gatsby-react-router-scroll@^2.1.3:
     "@babel/runtime" "^7.0.0"
     scroll-behavior "^0.9.9"
     warning "^3.0.0"
-
-gatsby-remark-find-replace@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-find-replace/-/gatsby-remark-find-replace-0.2.0.tgz#6d9241ed941a70e272d35b5609514b5ed375b246"
-  integrity sha512-LdpZ24P50oF5rID5jLMz3RYpl8MGUED/xG+aHGA5YKRPVBHoXpowHQA9ZaXX1ioC5WMge3nMvTFfyWvWxWMhwA==
-  dependencies:
-    escape-string-regexp "^1.0.5"
-    unist-util-visit "^1.4.0"
 
 gatsby-source-filesystem@^2.1.9:
   version "2.1.9"
@@ -14448,25 +14435,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeface-aleo@^0.0.69:
-  version "0.0.69"
-  resolved "https://registry.yarnpkg.com/typeface-aleo/-/typeface-aleo-0.0.69.tgz#887a411122e0eb109f478fc2f9164be7492984fd"
-  integrity sha512-GWQ1BrgQfu0TFSr1TQTXhPocb+sAequcbVO6R+TEh7rpo9l4CN4hdHLq0Z32pKNJqAH6FW3B/GA1cGHbhhdVjQ==
-
-typeface-clear-sans@^0.0.44:
-  version "0.0.44"
-  resolved "https://registry.yarnpkg.com/typeface-clear-sans/-/typeface-clear-sans-0.0.44.tgz#6cad349e6ed72cb1552238807421aa498e2ae8d6"
-  integrity sha512-U2UULDIlM4sgrNYsULiz2isO1bbCHay8zDZuGPKteY2TTqR6u0ke0iJYTQv7LfL0r5Cl+Vt1eW6WrsUuoLO0YA==
-
 typeface-inter@^3.7.0:
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/typeface-inter/-/typeface-inter-3.7.0.tgz#fccacffe2288b57e1f327dcdcda8607965f36ec7"
   integrity sha512-xKnJVcyJJ2M8CfWjZQI+JmjmGigtuvKgsftYwcd9DpHM0t+zcLfA8IIDK76+wywVLmqc3PHOS2mo/7uUPJTrxA==
-
-typeface-muli@^0.0.71:
-  version "0.0.71"
-  resolved "https://registry.yarnpkg.com/typeface-muli/-/typeface-muli-0.0.71.tgz#e25f4bd4158a1636a1c93cfd6d04346bc3c7fb82"
-  integrity sha512-gWRJSv8D938dsngyYSrx3vLLPtuYwTHuDqa0isvB+p3x6f72QnWBbpKns+BNOe3P+7xsWZcTxQWbIrbGzfzq+w==
 
 typography-normalize@^0.16.19:
   version "0.16.19"
@@ -14701,7 +14673,7 @@ unist-util-visit-parents@^2.0.0:
   dependencies:
     unist-util-is "^3.0.0"
 
-unist-util-visit@^1.0.0, unist-util-visit@^1.1.0, unist-util-visit@^1.3.0, unist-util-visit@^1.4.0:
+unist-util-visit@^1.0.0, unist-util-visit@^1.1.0, unist-util-visit@^1.3.0:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-1.4.1.tgz#4724aaa8486e6ee6e26d7ff3c8685960d560b1e3"
   integrity sha512-AvGNk7Bb//EmJZyhtRUnNMEpId/AZ5Ph/KUpTI09WHQuDZHKovQ1oEv3mfmKpWKtoMzyMC4GLBm1Zy5k12fjIw==
