@@ -17,7 +17,7 @@ const Index = ({ data }) => (
         <Halves>
           <ImageHalf>
             <div style={{ height: '100%', padding: '2rem' }}>
-              <AnimatedIcon />
+              <AnimatedIcon shape="circle" />
             </div>
           </ImageHalf>
           <TextHalf>
@@ -40,7 +40,7 @@ const Index = ({ data }) => (
 
           <ImageHalf>
             <div style={{ height: '100%', padding: '2rem' }}>
-              <AnimatedIcon />
+              <AnimatedIcon shape="rhombus" />
             </div>
           </ImageHalf>
           <TextHalf>
@@ -56,7 +56,7 @@ const Index = ({ data }) => (
 
           <ImageHalf>
             <div style={{ height: '100%', padding: '2rem' }}>
-              <AnimatedIcon />
+              <AnimatedIcon shape="circle" />
             </div>
           </ImageHalf>
           <TextHalf>

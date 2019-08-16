@@ -1,9 +1,12 @@
 import React from 'react'
 import { useState, useRef, useLayoutEffect } from 'react'
 import PropTypes from 'prop-types'
-import Pink from '../../images/circle-pink.svg'
-import Yellow from '../../images/circle-yellow.svg'
-import Blue from '../../images/circle-blue.svg'
+import PinkCircle from '../../images/circle-pink.svg'
+import YellowCircle from '../../images/circle-yellow.svg'
+import BlueCircle from '../../images/circle-blue.svg'
+import PinkRhombus from '../../images/rhombus-pink.svg'
+import YellowRhombus from '../../images/rhombus-yellow.svg'
+import BlueRhombus from '../../images/rhombus-blue.svg'
 import { yellow, pink } from 'constants/theme'
 import { motion, useViewportScroll, useTransform } from 'framer-motion'
 import PatternBox from 'components/patternBox'
@@ -56,9 +59,139 @@ ParallaxImage.propTypes = {
   style: PropTypes.object,
 }
 
-const AnimatedIcon = () => {
+const CircleIcon = ({ scale }) => (
+  <div style={{ position: 'relative' }}>
+    <div
+      style={{
+        mixBlendMode: 'multiply',
+        width: '100%',
+        position: 'absolute',
+        zIndex: '-1',
+        top: '0px',
+        left: '0px',
+      }}
+    >
+      <motion.div style={{ transform: `translateY(${scale}px)` }}>
+        <motion.div
+          initial={{ rotate: '0deg' }}
+          animate={{ rotate: '360deg' }}
+          transition={{ ease: 'easeInOut', duration: 4, loop: Infinity }}
+          style={{ originX: '49%', originY: '49%', width: '100%' }}
+        >
+          <PinkCircle style={{ mixBlendMode: 'multiply', width: '100%' }} />
+        </motion.div>
+      </motion.div>
+    </div>
+    <div
+      style={{
+        mixBlendMode: 'multiply',
+        width: '100%',
+        position: 'absolute',
+        zIndex: '-1',
+        top: '24px',
+        left: '15px',
+      }}
+    >
+      <motion.div
+        initial={{ rotate: '0deg' }}
+        animate={{ rotate: '360deg' }}
+        transition={{ ease: 'easeInOut', duration: 5, loop: Infinity }}
+        style={{ originX: '49%', originY: '49%', width: '100%' }}
+      >
+        <YellowCircle style={{ mixBlendMode: 'multiply', width: '100%' }} />
+      </motion.div>
+    </div>
+    <div
+      style={{
+        mixBlendMode: 'multiply',
+        width: '100%',
+        position: 'absolute',
+        zIndex: '-1',
+        top: '0px',
+        left: '30px',
+      }}
+    >
+      <motion.div
+        initial={{ rotate: '0deg' }}
+        animate={{ rotate: '360deg' }}
+        transition={{ ease: 'easeInOut', duration: 6, loop: Infinity }}
+        style={{ originX: '49%', originY: '49%', width: '100%' }}
+      >
+        <BlueCircle style={{ mixBlendMode: 'multiply', width: '100%' }} />
+      </motion.div>
+    </div>
+  </div>)
+
+const RhombusIcon = ({ scale }) => (
+  <div style={{ position: 'relative' }}>
+    <div
+      style={{
+        mixBlendMode: 'multiply',
+        width: '100%',
+        position: 'absolute',
+        zIndex: '-1',
+        top: '0px',
+        left: '0px',
+      }}
+    >
+      <motion.div>
+        <motion.div
+          initial={{ translateY: '33.333%' }}
+          animate={{ translateY: '0%' }}
+          transition={{ ease: 'easeInOut', yoyo: Infinity, duration: 4 }}
+          
+        >
+          <PinkRhombus style={{ mixBlendMode: 'multiply', width: '100%' }} />
+        </motion.div>
+      </motion.div>
+    </div>
+    <div
+      style={{
+        mixBlendMode: 'multiply',
+        width: '100%',
+        position: 'absolute',
+        zIndex: '-1',
+        top: '20px',
+        left: '0px',
+      }}
+    >
+      <motion.div
+        initial={{ translateY: '-33.333%' }}
+        animate={{ translateY: '33.333%' }}
+        transition={{ ease: 'easeInOut', yoyo: Infinity, duration: 5 }}
+      >
+        <YellowRhombus style={{ mixBlendMode: 'multiply', width: '100%' }} />
+      </motion.div>
+    </div>
+    <div
+      style={{
+        mixBlendMode: 'multiply',
+        width: '100%',
+        position: 'absolute',
+        zIndex: '-1',
+        top: '0px',
+        left: '0px',
+      }}
+    >
+      <motion.div
+        initial={{ translateY: '-33.333%' }}
+        animate={{ translateY: '66.666%' }}
+        transition={{ ease: 'easeInOut', yoyo: Infinity, duration: 6 }}
+      >
+        <BlueRhombus style={{ mixBlendMode: 'multiply', width: '100%' }} />
+      </motion.div>
+    </div>
+  </div>)
+
+const AnimatedIcon = ({ shape }) => {
   const { scrollYProgress } = useViewportScroll()
   const scale = useTransform(scrollYProgress, [0, 1], [0.5, 1])
+
+  let ShapeIcon = CircleIcon
+
+  if(shape == 'rhombus') {
+    ShapeIcon = RhombusIcon
+  }
   return (
     <div
       style={{ position: 'relative', height: '100%', paddingBottom: '100%' }}
@@ -70,70 +203,7 @@ const AnimatedIcon = () => {
           padding: '10%',
         }}
       >
-        <div style={{ position: 'relative' }}>
-          <div
-            style={{
-              mixBlendMode: 'multiply',
-              width: '100%',
-              position: 'absolute',
-              zIndex: '-1',
-              top: '0px',
-              left: '0px',
-            }}
-          >
-            <motion.div style={{ transform: `translateY(${scale}px)` }}>
-              <motion.div
-                initial={{ rotate: '0deg' }}
-                animate={{ rotate: '360deg' }}
-                transition={{ duration: 4, loop: Infinity }}
-                ease="easeInOut"
-                style={{ originX: '49%', originY: '49%', width: '100%' }}
-              >
-                <Pink style={{ mixBlendMode: 'multiply', width: '100%' }} />
-              </motion.div>
-            </motion.div>
-          </div>
-          <div
-            style={{
-              mixBlendMode: 'multiply',
-              width: '100%',
-              position: 'absolute',
-              zIndex: '-1',
-              top: '24px',
-              left: '15px',
-            }}
-          >
-            <motion.div
-              initial={{ rotate: '0deg' }}
-              animate={{ rotate: '360deg' }}
-              transition={{ duration: 5, loop: Infinity }}
-              ease="easeInOut"
-              style={{ originX: '49%', originY: '49%', width: '100%' }}
-            >
-              <Yellow style={{ mixBlendMode: 'multiply', width: '100%' }} />
-            </motion.div>
-          </div>
-          <div
-            style={{
-              mixBlendMode: 'multiply',
-              width: '100%',
-              position: 'absolute',
-              zIndex: '-1',
-              top: '0px',
-              left: '30px',
-            }}
-          >
-            <motion.div
-              initial={{ rotate: '0deg' }}
-              animate={{ rotate: '360deg' }}
-              transition={{ duration: 6, loop: Infinity }}
-              ease="easeInOut"
-              style={{ originX: '49%', originY: '49%', width: '100%' }}
-            >
-              <Blue style={{ mixBlendMode: 'multiply', width: '100%' }} />
-            </motion.div>
-          </div>
-        </div>
+        <ShapeIcon scale={scale} />
       </div>
       <ParallaxImage
         style={{
