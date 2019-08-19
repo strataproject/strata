@@ -286,7 +286,7 @@ const AnimatedIcon = ({ shape }) => {
       <ParallaxImage
         style={{ position: 'absolute', width: '25%', height: '12rem' }}
       >
-        <PatternBox style={{ width: '100%', height: '12rem' }} fill={yellow} />
+        <PatternBox style={{ width: '100%', height: '12rem' }} name='diagonal' fill={yellow} />
       </ParallaxImage>
     </div>
   )
