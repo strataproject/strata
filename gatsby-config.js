@@ -92,7 +92,7 @@ module.exports = {
         resolve: 'gatsby-plugin-webpack-bundle-analyzer',
         options: {
             analyzerPort: 8008,
-            production: true,
+            production: false,
         },
     },
     {
