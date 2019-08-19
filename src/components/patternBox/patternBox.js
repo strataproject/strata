@@ -5,7 +5,7 @@ const Dots = ({style = {}, fill = '#545454'}) => {
   return (
     <svg style={style}>
       <defs>
-        <pattern id="tictactoe"patternUnits="userSpaceOnUse" width="10" height="10">
+        <pattern id="tictactoe" patternUnits="userSpaceOnUse" width="10" height="10">
           <circle cx="1" cy="1" r="1" fill={fill} />
           <rect width='10' height='10' fill='#fff0' />
         </pattern>
@@ -20,7 +20,7 @@ const DiagonalLines = ({style = {}, fill = '#545454'}) => {
     <svg style={style}>
       <defs>
         <pattern patternTransform="rotate(-45)" id="diagonal" patternUnits="userSpaceOnUse" width="10" height="10">
-          <line x1='0' y1='0' x2='16' y2='0' stroke-linecap="square" stroke={fill} stroke-width="2" />
+          <line x1='0' y1='0' x2='16' y2='0' strokeLinecap="square" stroke={fill} strokeWidth="2" />
           <rect width='10' height='10' fill='#fff0' />
         </pattern>
       </defs>
@@ -48,8 +48,8 @@ const PatternBox = ({ style = {}, fill = '#545454', name = 'dots' }) => {
 }
 
 PatternBox.propTypes = {
-  style: PropTypes.object.isNotRequired,
-  fill: PropTypes.string.isNotRequired,
+  style: PropTypes.object,
+  fill: PropTypes.string,
 }
 
 export default PatternBox

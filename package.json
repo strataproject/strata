@@ -54,6 +54,7 @@
         "tailwindcss": "^1.1.0",
         "tailwindcss-fluid-container": "^2.0.0",
         "typeface-inter": "^3.7.0",
+        "typeface-lexend-deca": "https://github.com/stefl/typeface-lexend-deca",
         "typography": "^0.16.19"
     },
     "devDependencies": {

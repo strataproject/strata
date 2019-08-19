@@ -5,6 +5,8 @@ import {
   wrapPageElementWithoutTransition,
 } from 'helpers/wrapPageElement'
 import 'typeface-inter'
+import 'typeface-lexend-deca'
+
 //import 'typeface-muli'
 // React Context in Browser
 // eslint-disable-next-line react/prop-types

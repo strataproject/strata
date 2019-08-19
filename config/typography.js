@@ -2,6 +2,7 @@ import Typography from 'typography'
 
 //import 'typeface-muli'
 import 'typeface-inter'
+import 'typeface-lexend-deca'
 
 // This website uses the system font stack after the placed "Montserrat" and "Source Sans Pro" fonts
 // The scaleRatio will be overwritten for smaller breakpoints in src/components/Layout
