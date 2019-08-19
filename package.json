@@ -23,9 +23,7 @@
         "babel-plugin-styled-components": "^1.10.6",
         "babel-plugin-tailwind-components": "^0.5.10",
         "babel-preset-gatsby": "^0.2.8",
-        "color": "^3.1.2",
         "framer-motion": "^1.6.1",
-        "fs": "^0.0.1-security",
         "gatsby": "^2.13.52",
         "gatsby-image": "^2.2.8",
         "gatsby-plugin-catch-links": "^2.1.2",
@@ -49,16 +47,13 @@
         "react": "^16.8.6",
         "react-dom": "^16.8.6",
         "react-helmet": "^5.2.1",
-        "react-pose": "^4.0.8",
         "react-typography": "^0.16.19",
         "styled-components": "^4.3.2",
-        "svg-patterns": "^1.0.0",
         "tailwind.macro": "^0.5.10",
         "tailwindcss": "^1.1.0",
         "tailwindcss-fluid-container": "^2.0.0",
         "typeface-inter": "^3.7.0",
-        "typography": "^0.16.19",
-        "virtual-dom-stringify": "^3.0.1"
+        "typography": "^0.16.19"
     },
     "devDependencies": {
         "ava": "^2.2.0",

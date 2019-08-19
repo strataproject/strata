@@ -1,22 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import stringify from 'virtual-dom-stringify'
-import circles from 'svg-patterns/p/circles'
 
 const PatternBox = ({ style, fill = '#545454' }) => {
-  const pattern = circles({
-    size: 15, // size of the pattern
-    radius: 3,
-    complement: true,
-    fill: fill, // any SVG-compatible color
-    strokeWidth: 0,
-    stroke: 'none', // any SVG-compatible color
-    background: null, // any SVG-compatible color
-  })
   return (
     <svg style={style}>
-      <defs dangerouslySetInnerHTML={{ __html: stringify(pattern) }}></defs>
-      <rect width="100%" height="100%" style={{ fill: pattern.url() }} />
+      <defs>
+        <pattern id="tictactoe"patternUnits="userSpaceOnUse" width="10" height="10">
+          <circle cx="1" cy="1" r="1" fill="#000"/>
+          <rect width='10' height='10' fill='#fff0' />
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" style={{ fill: 'url(#tictactoe)' }} />
     </svg>
   )
 }
