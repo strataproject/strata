@@ -1,7 +1,8 @@
 {
-    "name": "gatsby-universal",
-    "license": "MIT",
+    "name": "Overlay",
+    "license": "UNLICENSED",
     "author": "Fabian Schultz <desk@fabianschultz.com>",
+    "private": true,
     "scripts": {
         "develop": "gatsby develop",
         "dev": "gatsby develop",
