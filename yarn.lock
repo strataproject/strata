@@ -12044,6 +12044,11 @@ react-hot-loader@^4.12.5:
     shallowequal "^1.1.0"
     source-map "^0.7.3"
 
+react-html-id@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/react-html-id/-/react-html-id-0.1.5.tgz#a180084bd8974aac6a497ebaaedcecb03aadf2bf"
+  integrity sha512-8MvS/oeD7EE9jlIM/iNc2HtyN5mzFLK9DHGThuucxJYnGVYfOR1ZVRkE5znJmKbj8PMDXnrnozjDdHcSQJO3LA==
+
 react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"

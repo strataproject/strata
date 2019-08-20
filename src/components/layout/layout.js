@@ -24,7 +24,6 @@ const Layout = ({ data, children }) => (
   <Container>
     <GlobalStyle />
     <Head />
-    <NavModal id="nav_modal" />
     <Header title={data.site.siteMetadata.siteTitle} />
     <div style={{ minHeight: '100vh' }}>{children}</div>
     <Footer title={data.site.siteMetadata.siteTitle} />
