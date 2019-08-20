@@ -19,7 +19,7 @@ export const Container = styled.nav`
       }
 
       a {
-        color: rgba(64, 64, 64, 0.5);
+        color: rgba(64, 64, 64, 0.9);
         transition: color 0.2s ease;
         text-decoration: none;
         letter-spacing: 1px;

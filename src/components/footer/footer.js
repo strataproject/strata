@@ -39,7 +39,7 @@ const Footer = ({ title }) => (
 
             <Nav />
           </FooterNav>
-          <p style={{ opacity: '0.5' }}>
+          <p style={{ opacity: '0.9' }}>
             © All rights reserved.
             <br />
             Overlay is a project of ING. <br />
