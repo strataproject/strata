@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import { accent } from 'constants/theme'
+import { green } from 'constants/theme'
 
 export default createGlobalStyle`
   
@@ -20,7 +20,7 @@ export default createGlobalStyle`
   }
 
   a {
-    color: ${accent};
+    color: ${green};
   }
 
   pre {
@@ -29,7 +29,7 @@ export default createGlobalStyle`
     margin-top: 4rem;
     overflow: auto;
     border-radius: 5px;
-    color: ${accent};
+    color: ${green};
     border: 1px solid #ddd;
     font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
   }

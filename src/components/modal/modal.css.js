@@ -1,9 +1,9 @@
 import styled from 'styled-components'
-import { accent } from 'constants/theme'
+import { green } from 'constants/theme'
 
 export const Button = styled.button`
   -webkit-appearance: none;
-  background-color: ${accent};
+  background-color: ${green};
   border-radius: 5px;
   border: none;
   color: #ffffff;

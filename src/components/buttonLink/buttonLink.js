@@ -1,10 +1,10 @@
 import styled from 'styled-components'
-import { accent } from 'constants/theme'
+import { green } from 'constants/theme'
 import { Link } from 'gatsby'
 
 const ButtonLink = styled(Link)`
   -webkit-appearance: none;
-  background-color: ${accent};
+  background-color: ${green};
   border-radius: 5px;
   border: none;
   color: #ffffff;

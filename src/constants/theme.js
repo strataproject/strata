@@ -1,4 +1,3 @@
-export const accent = '#138975'
 export const pink = '#e682a3'
 export const blue = '#159EC1' // was '#14a3c7' 
 export const yellow = '#edd796'
@@ -7,7 +6,6 @@ export const black = '#11464b'
 export const orange = '#d66e60'
 
 export const colors = {
-  accent,
   pink,
   blue,
   yellow,
