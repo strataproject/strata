@@ -7,6 +7,7 @@ import Box from 'components/box'
 import Title from 'components/title'
 import Head from 'components/head'
 import Text from 'components/text'
+import Img from 'gatsby-image'
 
 const About = ({ data }) => (
   <Layout>
@@ -24,6 +25,7 @@ const About = ({ data }) => (
           }}
         />
       </Text>
+      <Img fluid={data.file.childImageSharp.fluid} />
     </Container>
     <div style={{ marginTop: '16em' }} />
   </Layout>
@@ -37,6 +39,16 @@ export default About
 
 export const query = graphql`
   query AboutQuery {
+    file(relativePath: { eq: "images/about/izuddin-helmi-adnan-ABKvlwjFT68-unsplash.jpg" }) {
+      publicURL
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fluid(maxWidth: 800, quality: 90) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
     aboutJson {
       title
       content {

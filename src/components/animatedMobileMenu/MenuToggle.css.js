@@ -7,8 +7,11 @@ export const MenuToggleButton = styled.button`
   -moz-user-select: none;
   -ms-user-select: none;
   cursor: pointer;
-  width: 50px;
-  height: 50px;
+  line-height: 0px;
+  width: 43px;
+  height: 43px;
   border-radius: 50%;
   background: transparent;
+  padding: 0px;
+  margin-top: -3px;
 `

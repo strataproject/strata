@@ -12,6 +12,7 @@ export const Container = styled.nav`
       ${tw`font-sans text-xs inline-block px-2`}
       margin-top: 2.4rem;
       text-transform: uppercase;
+      position: relative;
 
       & + li {
         margin-left: 1rem;
