@@ -96,6 +96,19 @@ module.exports = {
         },
     },
     {
+      resolve: `gatsby-plugin-cookiehub`,
+      options: {
+        // your cookiehub widget ID
+        cookihubId: `39d4302a`,
+        // your google analytics tracking id
+        trackingId: `UA-XXXXXXXX-X`,
+        // Puts tracking script in the head instead of the body
+        head: false,
+        // enable ip anonymization
+        anonymize: true,        
+      },
+    },
+    {
     resolve: `gatsby-plugin-favicon`,
       options: {
         logo: "./src/images/overlay-icon-1500-circle.png",

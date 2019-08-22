@@ -22,7 +22,6 @@ const DiagonalLines = ({id = 'default', style = {}, fill = '#545454'}) => {
       <defs>
         <pattern patternTransform="rotate(-45)" id={`diagonal-${id}`} patternUnits="userSpaceOnUse" width="10" height="10">
           <line x1='0' y1='0' x2='16' y2='0' strokeLinecap="square" stroke={fill} strokeWidth="2" />
-          <rect width='10' height='10' fill='#fff0' />
         </pattern>
       </defs>
       <rect width="100%" height="100%" style={{ fill: `url(#diagonal-${id})` }} />
