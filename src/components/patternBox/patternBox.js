@@ -8,7 +8,6 @@ const Dots = ({id = 'default', style = {}, fill = '#545454'}) => {
       <defs>
         <pattern id={`tictactoe-${id}`} patternUnits="userSpaceOnUse" width="10" height="10">
           <circle cx="1" cy="1" r="1" fill={fill} />
-          <rect width='10' height='10' fill='#fff0' />
         </pattern>
       </defs>
       <rect width="100%" height="100%" style={{ fill: `url(#tictactoe-${id})` }} />
