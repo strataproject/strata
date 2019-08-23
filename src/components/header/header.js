@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import { HeaderContainer } from './header.css'
 import DesktopNav from 'components/header/desktopNav/desktopNav'
 import MobileNav from 'components/header/mobileNav/mobileNav'
-import Logo from './../../images/overlay-logo-decorative.svg'
+import Logo from './../../images/overlay-logo-whitespace.svg'
 
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
