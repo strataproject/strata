@@ -9,6 +9,8 @@ import Hero from 'components/hero/hero.css'
 import AnimatedIcon from 'components/animatedIcon'
 import ButtonLink from 'components/buttonLink'
 import { ImageHalf, TextHalf, Halves } from 'components/halves'
+import { pink, green, orange, blue } from 'constants/theme'
+
 // eslint-disable-next-line
 const Index = ({ data }) => (
   <Layout>
@@ -23,8 +25,8 @@ const Index = ({ data }) => (
           <TextHalf>
             <Hero>
               <Title as="h1" size="large" theme="blackOnWhite">
-                A new data platform to tackle the problems of working with
-                sustainability data for finance
+                A new <span style={{color: pink}}>data platform</span> for working with&nbsp;
+                <span style={{color: green}}>sustainability data</span> in <span style={{color: blue}}>finance</span>
               </Title>
               <p>
                 Dealing with the consequences of climate change means acting
@@ -50,7 +52,7 @@ const Index = ({ data }) => (
             <p>
               Our data platform and software tools help financial institutions
               make use of the latest sustainability data to design the most
-              relevant products for domestic and commercial real estate assets.
+              relevant sustainable finance products based on real estate assets.
             </p>
           </TextHalf>
 

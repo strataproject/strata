@@ -21,7 +21,7 @@ export const Halves = styled.div`
         grid-area: 2 / 8 / 2 / 13;
       }
       div:nth-child(4) {
-        grid-area: 2 / 1 / 2 / 8;
+        grid-area: 2 / 1 / 2 / 7;
       }
       div:nth-child(5) {
         grid-area: 3 / 1 / 3 / 7;
