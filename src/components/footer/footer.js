@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { FooterContainer, FooterNav } from './footer.css'
 import Container from 'components/container'
 import Nav from 'components/footer/nav'
-import Logo from './../../images/overlay-logo-decorative.svg'
+import Logo from './../../images/overlay-logo-whitespace-centered-on-o.svg'
 import { green, blue, yellow } from '../../constants/theme'
 
 const Footer = ({ title }) => (
