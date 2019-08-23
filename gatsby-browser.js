@@ -6,6 +6,7 @@ import {
 } from 'helpers/wrapPageElement'
 import 'typeface-inter'
 import 'typeface-lexend-deca'
+import 'typeface-averta-pe'
 
 //import 'typeface-muli'
 // React Context in Browser

@@ -14326,6 +14326,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
+"typeface-averta-pe@https://github.com/stefl/typeface-averta-pe":
+  version "0.0.0"
+  resolved "https://github.com/stefl/typeface-averta-pe#d5b9a5c912f91b10f701b0d7d8802b0349af6788"
+
 typeface-inter@^3.7.0:
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/typeface-inter/-/typeface-inter-3.7.0.tgz#fccacffe2288b57e1f327dcdcda8607965f36ec7"

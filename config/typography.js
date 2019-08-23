@@ -3,17 +3,18 @@ import Typography from 'typography'
 //import 'typeface-muli'
 import 'typeface-inter'
 import 'typeface-lexend-deca'
+import 'typeface-averta-pe'
 
 // This website uses the system font stack after the placed "Montserrat" and "Source Sans Pro" fonts
 // The scaleRatio will be overwritten for smaller breakpoints in src/components/Layout
 
 const typography = new Typography({
   title: 'Strata',
-  baseFontSize: '16px',
+  baseFontSize: '18px',
   baseLineHeight: 1.45,
   bodyColor: 'hsla(0,0%,0%,0.8)',
   headerFontFamily: [
-    'Lexend Deca', //'Muli',
+    'Averta PE', //'Lexend Deca', //'Muli',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',
@@ -26,7 +27,7 @@ const typography = new Typography({
     'Segoe UI Symbol',
   ],
   bodyFontFamily: [
-    'Inter',
+    'Averta PE',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',
@@ -39,7 +40,7 @@ const typography = new Typography({
     'Segoe UI Symbol',
   ],
   scaleRatio: 2,
-  headerWeight: 100,
+  headerWeight: 600,
   overrideStyles: () => ({
     img: {
       marginBottom: 0,

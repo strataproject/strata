@@ -4,7 +4,7 @@ module.exports = {
   siteTitle: `Overlay`,
   siteTitleShort: `Overlay`,
   siteDescription: `Sustainability data platform`,
-  siteUrl: `https://overlay.earth`,
+  siteUrl: `https://www.overlay.earth`,
   themeColor: `#000`,
   backgroundColor: `#fff`,
   pathPrefix: null,
