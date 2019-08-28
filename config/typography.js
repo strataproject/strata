@@ -14,7 +14,7 @@ const typography = new Typography({
   baseLineHeight: 1.45,
   bodyColor: 'hsla(0,0%,0%,0.8)',
   headerFontFamily: [
-    'Averta PE', //'Lexend Deca', //'Muli',
+    'AvertaPE', //'Lexend Deca', //'Muli',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',
@@ -27,7 +27,7 @@ const typography = new Typography({
     'Segoe UI Symbol',
   ],
   bodyFontFamily: [
-    'Averta PE',
+    'AvertaPE',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',

@@ -197,7 +197,7 @@ module.exports = {
 
   fonts: {
     sans: [
-      'Averta PE',
+      'AvertaPE',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
