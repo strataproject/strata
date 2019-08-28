@@ -36,7 +36,8 @@ const Index = ({ data }) => (
                 Overlay helps the sustainable finance sector scale up to support
                 its clients in meeting global emissions targets.
               </p>
-              <ButtonLink to="/signup">Register interest</ButtonLink>
+
+              {false && <ButtonLink to="/signup">Register interest</ButtonLink>}
             </Hero>
           </TextHalf>
 
@@ -77,7 +78,7 @@ const Index = ({ data }) => (
       </div>
     </Container>
 
-    <Container>
+    { false && <Container>
       <div style={{marginTop: '8rem'}}>
         <Signup
           style={{
@@ -87,7 +88,7 @@ const Index = ({ data }) => (
           }}
         />
       </div>
-    </Container>
+    </Container>}
   </Layout>
 )
 

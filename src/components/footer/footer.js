@@ -43,7 +43,7 @@ const Footer = ({ title }) => (
             © All rights reserved.
             <br />
             Overlay is a project of ING. <br />
-            ING Labs, 10 Moorgate, London, UK, EC2R 6DA
+            ING Labs, 8-10 Moorgate, London, UK, EC2R 6DA
           </p>
         </FooterContainer>
       </Container>

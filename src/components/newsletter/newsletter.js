@@ -29,7 +29,7 @@ const Newsletter = ({ title }) => (
       <div style={{ width: '6rem' }}>
         <Logo />
       </div>
-      © All rights reserved. Overlay is a project of ING. ING Labs, 10 Moorgate,
+      © All rights reserved. Overlay is a project of ING. ING Labs, 8-10 Moorgate,
       London, UK, EC2R 6DA
     </div>
 
