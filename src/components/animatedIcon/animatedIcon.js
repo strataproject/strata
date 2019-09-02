@@ -62,11 +62,12 @@ ParallaxImage.propTypes = {
   style: PropTypes.object,
 }
 
-const CircleIcon = ({ scale }) => (
+const CircleIcon = ({ scale, blendMode, opacity }) => (
   <div style={{ position: 'relative' }}>
     <div
       style={{
-        mixBlendMode: 'multiply',
+        mixBlendMode: blendMode,
+        opacity: opacity,
         width: '100%',
         position: 'absolute',
         zIndex: '-1',
@@ -87,7 +88,8 @@ const CircleIcon = ({ scale }) => (
     </div>
     <div
       style={{
-        mixBlendMode: 'multiply',
+        mixBlendMode: blendMode,
+        opacity: opacity,
         width: '100%',
         position: 'absolute',
         zIndex: '-1',
@@ -106,7 +108,8 @@ const CircleIcon = ({ scale }) => (
     </div>
     <div
       style={{
-        mixBlendMode: 'multiply',
+        mixBlendMode: blendMode,        
+        opacity: opacity,
         width: '100%',
         position: 'absolute',
         zIndex: '-1',
@@ -123,13 +126,15 @@ const CircleIcon = ({ scale }) => (
         <BlueCircle style={{ mixBlendMode: 'multiply', width: '100%' }} />
       </motion.div>
     </div>
-  </div>)
+  </div>
+)
 
-const HexagonIcon = ({ scale }) => (
+const HexagonIcon = ({ scale, blendMode, opacity }) => (
   <div style={{ position: 'relative' }}>
     <div
       style={{
-        mixBlendMode: 'multiply',
+        mixBlendMode: blendMode,
+        opacity: opacity,
         width: '100%',
         position: 'absolute',
         zIndex: '-1',
@@ -150,7 +155,8 @@ const HexagonIcon = ({ scale }) => (
     </div>
     <div
       style={{
-        mixBlendMode: 'multiply',
+        mixBlendMode: blendMode,
+        opacity: opacity,
         width: '100%',
         position: 'absolute',
         zIndex: '-1',
@@ -169,7 +175,8 @@ const HexagonIcon = ({ scale }) => (
     </div>
     <div
       style={{
-        mixBlendMode: 'multiply',
+        mixBlendMode: blendMode,
+        opacity: opacity,
         width: '100%',
         position: 'absolute',
         zIndex: '-1',
@@ -186,13 +193,15 @@ const HexagonIcon = ({ scale }) => (
         <BlueHexagon style={{ mixBlendMode: 'multiply', width: '100%' }} />
       </motion.div>
     </div>
-  </div>)
+  </div>
+)
 
-const RhombusIcon = ({ scale }) => (
+const RhombusIcon = ({ scale, blendMode, opacity }) => (
   <div style={{ position: 'relative' }}>
     <div
       style={{
-        mixBlendMode: 'multiply',
+        mixBlendMode: blendMode,
+        opacity: opacity,
         position: 'absolute',
         zIndex: '-1',
         top: '0px',
@@ -204,14 +213,15 @@ const RhombusIcon = ({ scale }) => (
       <motion.div
         initial={{ translateY: '33.333%' }}
         animate={{ translateY: '0%' }}
-        transition={{ ease: 'easeInOut', yoyo: Infinity, duration: 4 }}          
+        transition={{ ease: 'easeInOut', yoyo: Infinity, duration: 4 }}
       >
         <PinkRhombus style={{ mixBlendMode: 'multiply', width: '100%' }} />
       </motion.div>
     </div>
     <div
       style={{
-        mixBlendMode: 'multiply',
+        mixBlendMode: blendMode,
+        opacity: opacity,
         width: '100%',
         position: 'absolute',
         zIndex: '-1',
@@ -229,7 +239,8 @@ const RhombusIcon = ({ scale }) => (
     </div>
     <div
       style={{
-        mixBlendMode: 'multiply',
+        mixBlendMode: blendMode,
+        opacity: opacity,
         width: '100%',
         position: 'absolute',
         zIndex: '-1',
@@ -245,7 +256,8 @@ const RhombusIcon = ({ scale }) => (
         <BlueRhombus style={{ mixBlendMode: 'multiply', width: '100%' }} />
       </motion.div>
     </div>
-  </div>)
+  </div>
+)
 
 const AnimatedIcon = ({ shape }) => {
   const { scrollYProgress } = useViewportScroll()
@@ -253,11 +265,26 @@ const AnimatedIcon = ({ shape }) => {
 
   let ShapeIcon = CircleIcon
 
-  if(shape == 'rhombus') {
+  if (shape == 'rhombus') {
     ShapeIcon = RhombusIcon
-  } else if(shape == 'hexagon') {
+  } else if (shape == 'hexagon') {
     ShapeIcon = HexagonIcon
   }
+
+  //let canHandleMixBlendMode = false
+
+  const canHandleMixBlendMode = !(typeof window !== 'undefined' &&
+    typeof window.getComputedStyle(document.body).mixBlendMode === 'undefined')
+
+  let blendMode = 'multiply'
+  let opacity = 1
+  if (
+    !canHandleMixBlendMode
+  ) {
+    blendMode = 'normal'
+    opacity = 0.666
+  }
+
   return (
     <div
       style={{ position: 'relative', height: '100%', paddingBottom: '100%' }}
@@ -269,7 +296,7 @@ const AnimatedIcon = ({ shape }) => {
           padding: '10%',
         }}
       >
-        <ShapeIcon scale={scale} />
+        <ShapeIcon scale={scale} opacity={opacity} blendMode={blendMode} />
       </div>
       <ParallaxImage
         style={{
@@ -286,7 +313,11 @@ const AnimatedIcon = ({ shape }) => {
       <ParallaxImage
         style={{ position: 'absolute', width: '25%', height: '12rem' }}
       >
-        <PatternBox style={{ width: '100%', height: '12rem' }} name='diagonal' fill={yellow} />
+        <PatternBox
+          style={{ width: '100%', height: '12rem' }}
+          name="diagonal"
+          fill={yellow}
+        />
       </ParallaxImage>
     </div>
   )
