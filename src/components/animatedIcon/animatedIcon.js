@@ -287,7 +287,7 @@ const AnimatedIcon = ({ shape }) => {
 
   return (
     <div
-      style={{ position: 'relative', height: '100%', paddingBottom: '100%' }}
+      style={{ position: 'relative', height: '100%', paddingBottom: '100%', overflow: 'hidden' }}
     >
       <div
         style={{
