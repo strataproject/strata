@@ -211,8 +211,8 @@ const RhombusIcon = ({ scale, blendMode, opacity }) => (
       }}
     >
       <motion.div
-        initial={{ translateY: '33.333%' }}
-        animate={{ translateY: '0%' }}
+        initial={{ translateY: '50%' }}
+        animate={{ translateY: '16.666%' }}
         transition={{ ease: 'easeInOut', yoyo: Infinity, duration: 4 }}
       >
         <PinkRhombus style={{ mixBlendMode: 'multiply', width: '100%' }} />
@@ -225,12 +225,12 @@ const RhombusIcon = ({ scale, blendMode, opacity }) => (
         width: '100%',
         position: 'absolute',
         zIndex: '-1',
-        top: '20px',
+        top: '0px',
         left: '0px',
       }}
     >
       <motion.div
-        initial={{ translateY: '-33.333%' }}
+        initial={{ translateY: '0%' }}
         animate={{ translateY: '33.333%' }}
         transition={{ ease: 'easeInOut', yoyo: Infinity, duration: 5 }}
       >
@@ -249,8 +249,8 @@ const RhombusIcon = ({ scale, blendMode, opacity }) => (
       }}
     >
       <motion.div
-        initial={{ translateY: '-33.333%' }}
-        animate={{ translateY: '66.666%' }}
+        initial={{ translateY: '66.666%' }}
+        animate={{ translateY: '33.333%' }}
         transition={{ ease: 'easeInOut', yoyo: Infinity, duration: 6 }}
       >
         <BlueRhombus style={{ mixBlendMode: 'multiply', width: '100%' }} />
