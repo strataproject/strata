@@ -25,7 +25,6 @@ const About = ({ data }) => (
           }}
         />
       </Text>
-      <Img fluid={data.file.childImageSharp.fluid} />
     </Container>
     <div style={{ marginTop: '16em' }} />
   </Layout>

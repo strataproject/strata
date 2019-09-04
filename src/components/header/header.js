@@ -17,7 +17,7 @@ const Header = ({ title }) => {
   const menu = [
     { to: '/', label: 'Home' },
     { to: '/about', label: 'About' },
-    { to: '/blog', label: 'Blog' },
+    // { to: '/blog', label: 'Blog' },
     { to: '/contact', label: 'Contact' },
   ]
   return (
