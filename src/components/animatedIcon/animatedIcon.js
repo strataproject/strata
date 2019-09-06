@@ -10,7 +10,7 @@ import BlueRhombus from '../../images/rhombus-blue.svg'
 import PinkHexagon from '../../images/hexagon-pink.svg'
 import YellowHexagon from '../../images/hexagon-yellow.svg'
 import BlueHexagon from '../../images/hexagon-blue.svg'
-import { yellow, pink } from 'constants/theme'
+import { blue, yellow, pink } from 'constants/theme'
 import { motion, useViewportScroll, useTransform } from 'framer-motion'
 import PatternBox from 'components/patternBox'
 
@@ -259,7 +259,7 @@ const RhombusIcon = ({ scale, blendMode, opacity }) => (
   </div>
 )
 
-const AnimatedIcon = ({ shape }) => {
+const AnimatedIcon = ({ shape, patternA = {color: blue}, patternB = {color: pink} }) => {
   const { scrollYProgress } = useViewportScroll()
   const scale = useTransform(scrollYProgress, [0, 1], [0.5, 1])
 
@@ -307,7 +307,7 @@ const AnimatedIcon = ({ shape }) => {
           height: '6rem',
         }}
       >
-        <PatternBox style={{ width: '100%', height: '6rem' }} fill={pink} />
+        <PatternBox style={{ width: '100%', height: '6rem' }} fill={patternA.color} />
       </ParallaxImage>
 
       <ParallaxImage
@@ -316,7 +316,7 @@ const AnimatedIcon = ({ shape }) => {
         <PatternBox
           style={{ width: '100%', height: '12rem' }}
           name="diagonal"
-          fill={yellow}
+          fill={patternB.color}
         />
       </ParallaxImage>
     </div>

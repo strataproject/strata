@@ -3,8 +3,9 @@ import PropTypes from 'prop-types'
 import { FooterContainer, FooterNav } from './footer.css'
 import Container from 'components/container'
 import Nav from 'components/footer/nav'
-import Logo from './../../images/overlay-logo-whitespace-centered-on-o.svg'
-import { green, blue, yellow } from '../../constants/theme'
+import Logo from './../../images/overlay-wordmark-and-icon-logo-transparent.svg'
+import { green, yellow, pink, blue } from '../../constants/theme'
+import PatternBox from 'components/patternBox/patternBox'
 
 const Footer = ({ title }) => (
   <div>
@@ -13,11 +14,8 @@ const Footer = ({ title }) => (
         <FooterContainer></FooterContainer>
       </Container>
     </div>
-    <div style={{ backgroundColor: green }}>
-      <Container>
-        <FooterContainer></FooterContainer>
-      </Container>
-    </div>
+    <PatternBox style={{ width: '100%', height: '128px', radius: 2 }} fill={blue} radius={2} size={16} />
+    
     <div style={{ backgroundColor: yellow }}>
       <Container>
         <FooterContainer>

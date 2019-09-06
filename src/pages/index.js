@@ -19,7 +19,7 @@ const Index = ({ data }) => (
         <Halves>
           <ImageHalf>
             <div className="image-half-inner" style={{ height: '100%', padding: '2rem' }}>
-              <AnimatedIcon shape="circle" />
+              <AnimatedIcon shape="circle" patternA={{color: pink}} patternB={{color: blue}} />
             </div>
           </ImageHalf>
           <TextHalf>

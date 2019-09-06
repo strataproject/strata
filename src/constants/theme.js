@@ -4,6 +4,7 @@ export const yellow = '#e8e395' // was '#edd796'
 export const green = '#129174' // was '#148573' // was '#138975' 
 export const black = '#104049' // was '#11464b'
 export const orange =  '#ce655d' // was '#d66e60'
+export const navy = '#12487d'
 
 export const colors = {
   pink,
@@ -12,6 +13,7 @@ export const colors = {
   green,
   black,
   orange,
+  navy
 }
 
 export const themes = {
@@ -33,6 +35,10 @@ export const themes = {
   },
   pinkOnWhite: {
     fg: pink,
+    bg: 'white',
+  },
+  navyOnWhite: {
+    fg: navy,
     bg: 'white',
   },
 }
