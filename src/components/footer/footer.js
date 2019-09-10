@@ -38,10 +38,10 @@ const Footer = ({ title }) => (
             <Nav />
           </FooterNav>
           <p style={{ opacity: '0.9' }}>
-            © All rights reserved.
+            © All rights reserved
             <br />
-            Overlay is a project of ING. <br />
-            ING Labs, 8-10 Moorgate, London, UK, EC2R 6DA
+            Overlay is incubated by ING Labs<br />
+            8-10 Moorgate, London, UK, EC2R 6DA
           </p>
         </FooterContainer>
       </Container>
