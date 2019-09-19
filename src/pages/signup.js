@@ -6,6 +6,8 @@ import Title from 'components/title'
 import Container from 'components/container'
 import Head from 'components/head'
 import Signup from 'components/signup'
+import {ReactTypeformEmbed} from 'react-typeform-embed'
+
 // eslint-disable-next-line
 const SignupPage = ({ data }) => (
   <Layout>
@@ -19,8 +21,11 @@ const SignupPage = ({ data }) => (
           Add your details below and we’ll add you to our newsletter for
           occasional updates about our progress.
         </p>
+
       </Box>
-      <Signup />
+      <div>
+        <ReactTypeformEmbed url='https://overlayearth.typeform.com/to/fo7jen' mode='widget' />
+      </div>
     </Container>
   </Layout>
 )

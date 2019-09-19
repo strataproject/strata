@@ -49,6 +49,7 @@
         "react-dom": "^16.8.6",
         "react-helmet": "^5.2.1",
         "react-html-id": "^0.1.5",
+        "react-typeform-embed": "^0.2.1",
         "react-typography": "^0.16.19",
         "styled-components": "^4.3.2",
         "tailwind.macro": "^0.5.10",

@@ -37,7 +37,7 @@ const Index = ({ data }) => (
                 its clients in meeting global emissions targets.
               </p>
 
-              {false && <ButtonLink to="/signup">Register interest</ButtonLink>}
+              {true && <ButtonLink to="/signup">Register interest</ButtonLink>}
             </Hero>
           </TextHalf>
 

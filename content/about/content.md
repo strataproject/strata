@@ -14,4 +14,4 @@ Through our platform, gathering green performance data from multiple sources, ve
 
 We’re working initially with green bond issuers who have a portfolio of real estate assets, starting in the UK and the Netherlands. Today we compare a portfolio of assets against climate scenarios and then deliver the data as an overlay over existing financial information. 
 
-If you are interested in hearing more about our work, please [get in touch](/contact).
+If you are interested in hearing more about our work, [join our email list](/signup) or [get in touch](/contact).
