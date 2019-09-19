@@ -23,7 +23,7 @@ const SignupPage = ({ data }) => (
         </p>
 
       </Box>
-      <div>
+      <div style={{position: 'relative', width: '100%', height: '80vh', border: '1px solid #ddd'}}>
         <ReactTypeformEmbed url='https://overlayearth.typeform.com/to/fo7jen' mode='widget' />
       </div>
     </Container>
