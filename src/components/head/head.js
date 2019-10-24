@@ -53,13 +53,22 @@ const Head = ({
     <meta content={canonical} property="og:url" />
     <meta content={canonical} name="twitter:url" />
     <link rel="canonical" href={canonical} />
-    <meta content={imageUrl || `${siteUrl}/overlay-social-sharing.png`} property="og:image" />
+    <meta
+      content={imageUrl || `${siteUrl}/overlay-social-sharing.png`}
+      property="og:image"
+    />
     <meta content="1200" property="og:image:width" />
     <meta content="630" property="og:image:height" />
-    <meta content={imageUrl || `${siteUrl}/overlay-social-sharing.png`} name="twitter:image" />
+    <meta
+      content={imageUrl || `${siteUrl}/overlay-social-sharing.png`}
+      name="twitter:image"
+    />
     <meta content="1200" name="twitter:image:width" />
     <meta content="630" name="twitter:image:height" />
-    <meta content={imageUrl || `${siteUrl}/overlay-social-sharing.png`} property="og:image" />
+    <meta
+      content={imageUrl || `${siteUrl}/overlay-social-sharing.png`}
+      property="og:image"
+    />
     <meta content="1200" property="og:image:width" />
     <meta content="630" property="og:image:height" />
 

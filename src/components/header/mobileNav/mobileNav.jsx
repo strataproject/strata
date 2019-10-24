@@ -6,9 +6,9 @@ import { AnimatedMobileMenu } from 'components/animatedMobileMenu/AnimatedMobile
 import {
   MobileNavContainer,
   NavItem,
-  StyledNavButton,
-  StyledNav,
-  StyledNavContent,
+  //StyledNavButton,
+  //StyledNav,
+  //StyledNavContent,
 } from './mobileNav.css'
 //import Hamburger from './hamburger'
 //import ModalMenu from './modalMenu'
@@ -68,9 +68,9 @@ class MobileNav extends Component {
 
     return (
       <MobileNavContainer>
-        <div style={{position: 'relative', height: '2rem'}}>
-            <AnimatedMobileMenu menu={menu} />
-          </div>
+        <div style={{ position: 'relative', height: '2rem' }}>
+          <AnimatedMobileMenu menu={menu} />
+        </div>
         {/*<StyledNav color={color}>
           <StyledNavContent onClick={toggle}>
             <StyledNavButton

@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { Link } from 'gatsby'
 import { motion } from 'framer-motion'
 
 export const StyledNavigation = styled(motion.ul)`

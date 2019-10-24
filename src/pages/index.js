@@ -9,7 +9,7 @@ import Hero from 'components/hero/hero.css'
 import AnimatedIcon from 'components/animatedIcon'
 import ButtonLink from 'components/buttonLink'
 import { ImageHalf, TextHalf, Halves } from 'components/halves'
-import { pink, green, orange, blue } from 'constants/theme'
+import { pink, green, blue } from 'constants/theme'
 
 // eslint-disable-next-line
 const Index = ({ data }) => (
@@ -18,15 +18,25 @@ const Index = ({ data }) => (
       <div style={{ position: 'relative' }}>
         <Halves>
           <ImageHalf>
-            <div className="image-half-inner" style={{ height: '100%', padding: '2rem' }}>
-              <AnimatedIcon shape="circle" patternA={{color: pink}} patternB={{color: blue}} />
+            <div
+              className="image-half-inner"
+              style={{ height: '100%', padding: '2rem' }}
+            >
+              <AnimatedIcon
+                shape="circle"
+                patternA={{ color: pink }}
+                patternB={{ color: blue }}
+              />
             </div>
           </ImageHalf>
           <TextHalf>
             <Hero>
               <Title as="h1" size="large" theme="blackOnWhite">
-                A new <span style={{color: pink}}>data platform</span> for working with&nbsp;
-                <span style={{color: green}}>sustainability data</span> in <span style={{color: blue}}>finance</span>
+                A new <span style={{ color: pink }}>data platform</span> for
+                working with&nbsp;
+                <span style={{ color: green }}>
+                  sustainability data
+                </span> in <span style={{ color: blue }}>finance</span>
               </Title>
               <p>
                 Dealing with the consequences of climate change means acting
@@ -42,7 +52,10 @@ const Index = ({ data }) => (
           </TextHalf>
 
           <ImageHalf>
-            <div className="image-half-inner" style={{ height: '100%', padding: '2rem' }}>
+            <div
+              className="image-half-inner"
+              style={{ height: '100%', padding: '2rem' }}
+            >
               <AnimatedIcon shape="rhombus" />
             </div>
           </ImageHalf>
@@ -58,7 +71,10 @@ const Index = ({ data }) => (
           </TextHalf>
 
           <ImageHalf>
-            <div className="image-half-inner" style={{ height: '100%', padding: '2rem' }}>
+            <div
+              className="image-half-inner"
+              style={{ height: '100%', padding: '2rem' }}
+            >
               <AnimatedIcon shape="hexagon" />
             </div>
           </ImageHalf>
@@ -78,17 +94,19 @@ const Index = ({ data }) => (
       </div>
     </Container>
 
-    { false && <Container>
-      <div style={{marginTop: '8rem'}}>
-        <Signup
-          style={{
-            marginLeft: 'auto',
-            marginRight: 'auto',
-            marginBottom: '6rem',
-          }}
-        />
-      </div>
-    </Container>}
+    {false && (
+      <Container>
+        <div style={{ marginTop: '8rem' }}>
+          <Signup
+            style={{
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              marginBottom: '6rem',
+            }}
+          />
+        </div>
+      </Container>
+    )}
   </Layout>
 )
 

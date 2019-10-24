@@ -1,4 +1,30 @@
 {
   "title": "Team",
-  "content": "team.md"
+  "content": "team.md",
+  "team": [
+    {
+      "name": "Stef Lewandowski",
+      "title": "Product co-founder"
+    },
+    {
+      "name": "Tee Pruitt",
+      "title": "Commercial co-founder"
+    },
+    {
+      "name": "Alex Deschamps-Sonsino",
+      "title": "Research"
+    },
+    {
+      "name": "Vlad Mitroi",
+      "title": "Sustainable Finance"
+    },
+    {
+      "name": "Ant Stanley",
+      "title": "Architecture"
+    },
+    {
+      "name": "Remy Sharp",
+      "title": "Software Design"
+    }
+  ]
 }

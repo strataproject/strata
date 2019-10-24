@@ -4,7 +4,6 @@ import Form from 'components/form'
 import Title from 'components/title'
 import { Button } from './../modal/modal.css'
 import PropTypes from 'prop-types'
-import { yellow } from '../../constants/theme'
 
 function encode(data) {
   return Object.keys(data)

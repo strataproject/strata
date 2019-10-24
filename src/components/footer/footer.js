@@ -4,7 +4,7 @@ import { FooterContainer, FooterNav } from './footer.css'
 import Container from 'components/container'
 import Nav from 'components/footer/nav'
 import Logo from './../../images/overlay-wordmark-and-icon-logo-transparent.svg'
-import { green, yellow, pink, blue } from '../../constants/theme'
+import { yellow, blue } from '../../constants/theme'
 import PatternBox from 'components/patternBox/patternBox'
 
 const Footer = ({ title }) => (
@@ -14,8 +14,13 @@ const Footer = ({ title }) => (
         <FooterContainer></FooterContainer>
       </Container>
     </div>
-    <PatternBox style={{ width: '100%', height: '128px', radius: 2 }} fill={blue} radius={2} size={16} />
-    
+    <PatternBox
+      style={{ width: '100%', height: '128px', radius: 2 }}
+      fill={blue}
+      radius={2}
+      size={16}
+    />
+
     <div style={{ backgroundColor: yellow }}>
       <Container>
         <FooterContainer>
@@ -40,7 +45,8 @@ const Footer = ({ title }) => (
           <p style={{ opacity: '0.9' }}>
             © All rights reserved
             <br />
-            Overlay is incubated by ING Labs<br />
+            Overlay is incubated by ING Labs
+            <br />
             8-10 Moorgate, London, UK, EC2R 6DA
           </p>
         </FooterContainer>

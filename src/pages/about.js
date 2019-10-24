@@ -38,7 +38,11 @@ export default About
 
 export const query = graphql`
   query AboutQuery {
-    file(relativePath: { eq: "images/about/izuddin-helmi-adnan-ABKvlwjFT68-unsplash.jpg" }) {
+    file(
+      relativePath: {
+        eq: "images/about/izuddin-helmi-adnan-ABKvlwjFT68-unsplash.jpg"
+      }
+    ) {
       publicURL
       childImageSharp {
         # Specify the image processing specifications right in the query.

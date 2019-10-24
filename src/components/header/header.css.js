@@ -24,7 +24,7 @@ export const HeaderContainer = styled.header`
       color: ${green};
     }
     &:before {
-      content: "";
+      content: '';
       position: absolute;
       width: 100%;
       height: 2px;

@@ -22,7 +22,7 @@ const variants = {
   },
 }
 
-export const MenuItem = ({ item, index }) => {
+const MenuItem = ({ item }) => {
   return (
     <motion.li
       variants={variants}
@@ -35,5 +35,9 @@ export const MenuItem = ({ item, index }) => {
 }
 
 MenuItem.propTypes = {
-  i: PropTypes.number
+  i: PropTypes.number,
+  index: PropTypes.number,
+  item: PropTypes.object,
 }
+
+export { MenuItem }

@@ -1,5 +1,5 @@
 import React from 'react'
-import AppProvider from 'store/provider'
+//import AppProvider from 'store/provider'
 import {
   wrapPageElementWithTransition,
   wrapPageElementWithoutTransition,

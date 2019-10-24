@@ -18,6 +18,7 @@ const Header = ({ title }) => {
     { to: '/', label: 'Home' },
     { to: '/about', label: 'About' },
     // { to: '/blog', label: 'Blog' },
+    { to: '/careers', label: 'Careers' },
     { to: '/contact', label: 'Contact' },
   ]
   return (
@@ -29,10 +30,9 @@ const Header = ({ title }) => {
 
         <div>
           <DesktopNav menu={menu} />
-          <MobileNav menu={menu} />    
+          <MobileNav menu={menu} />
         </div>
       </HeaderContainer>
-      
     </Container>
   )
 }

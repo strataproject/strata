@@ -9,15 +9,8 @@ import GlobalStyle from 'global.css.js'
 import styled from 'styled-components'
 import tw from 'tailwind.macro'
 
-//import Curves from './../../images/strata-bg.svg'
-
 const Container = styled.div`
   ${tw`container mx-auto`}
-`
-
-const NavModal = styled.div`
-  ${tw`absolute w-full`};
-  z-index: 500;
 `
 
 const Layout = ({ data, children }) => (

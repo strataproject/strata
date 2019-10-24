@@ -32,21 +32,21 @@ export const AnimatedMobileMenu = ({ menu }) => {
   const { height } = useDimensions(containerRef)
 
   return (
-    <div style={{position: 'absolute', top: '0px', right: '0px'}}>
-    <motion.nav
-      initial={false}
-      animate={isOpen ? 'open' : 'closed'}
-      custom={height}
-      ref={containerRef}
-    >
-      <motion.div className="background" variants={sidebar} />
-      <Navigation menu={menu}  />
-      <MenuToggle isOpen={isOpen} toggle={() => toggleOpen()} />
-    </motion.nav>
+    <div style={{ position: 'absolute', top: '0px', right: '0px' }}>
+      <motion.nav
+        initial={false}
+        animate={isOpen ? 'open' : 'closed'}
+        custom={height}
+        ref={containerRef}
+      >
+        <motion.div className="background" variants={sidebar} />
+        <Navigation menu={menu} />
+        <MenuToggle isOpen={isOpen} toggle={() => toggleOpen()} />
+      </motion.nav>
     </div>
   )
 }
 
 AnimatedMobileMenu.propTypes = {
-  menu: PropTypes.array
+  menu: PropTypes.array,
 }
