@@ -32,13 +32,22 @@ const Careers = ({ data }) => (
       ))}
 
       <p>&nbsp;</p>
-      <h2>Coming soon…</h2>
-      <p>The following roles are in our hiring plan but we have not yet begun actively hiring.</p>
+      <h2>Advertising soon</h2>
+      <p>
+        The following roles are in our hiring plan but we have not yet advertised them. I you'd be interested in these roles, please email us at <a href="overlay@jobs.workable.com">overlay@jobs.workable.com</a>.
+      </p>
       {data.pending.edges.map(i => (
         <div key={i.node.childMarkdownRemark.frontmatter.url}>
-          <h3>
-            {i.node.childMarkdownRemark.frontmatter.title}
-          </h3>
+          <h3>{i.node.childMarkdownRemark.frontmatter.title}</h3>
+        </div>
+      ))}
+
+      <p>&nbsp;</p>
+      <h2>Recently closed</h2>
+      
+      {data.closed.edges.map(i => (
+        <div key={i.node.childMarkdownRemark.frontmatter.url}>
+          <h3>{i.node.childMarkdownRemark.frontmatter.title}</h3>
         </div>
       ))}
     </Container>
@@ -59,6 +68,29 @@ export const query = graphql`
       content {
         childMarkdownRemark {
           html
+        }
+      }
+    }
+
+    closed: allFile(
+      sort: {
+        order: DESC, fields: [name]
+      }, 
+      filter: {
+        childMarkdownRemark: { frontmatter: { status: { eq: "closed" } } },
+        absolutePath: {regex: "/(\/content\/jobs)/.*\\.md$/"}
+      }
+    ) {
+      edges {
+        node {
+          sourceInstanceName
+          childMarkdownRemark {
+            excerpt(pruneLength: 250)
+            frontmatter {
+              title
+              apply
+            }
+          }
         }
       }
     }
