@@ -47,6 +47,8 @@ const Footer = ({ title }) => (
             <br />
             Overlay is incubated by ING Labs
             <br />
+            Overlay is a registered trademark of ING.
+            <br />
             8-10 Moorgate, London, UK, EC2R 6DA
           </p>
         </FooterContainer>
