@@ -14,16 +14,17 @@
         "build:dir": "mkdirp ./public/icons/",
         "build:favicons": "node scripts/favicons",
         "build": "yarn run build:dir && yarn run build:favicons && gatsby build",
-        "test": "ava **/*.test.js --verbose"
+        "test": "jest"
     },
     "dependencies": {
+        "@babel/core": "^7.0.0-0",
         "@reach/dialog": "^0.2.9",
         "@reach/router": "^1.2.1",
         "@reach/visually-hidden": "^0.1.4",
         "babel-plugin-macros": "^2.6.1",
         "babel-plugin-styled-components": "^1.10.6",
         "babel-plugin-tailwind-components": "^0.5.10",
-        "babel-preset-gatsby": "^0.2.8",
+        "babel-preset-gatsby": "^0.2.23",
         "framer-motion": "^1.6.1",
         "gatsby": "^2.13.52",
         "gatsby-image": "^2.2.9",
@@ -62,8 +63,8 @@
         "typography": "^0.16.19"
     },
     "devDependencies": {
-        "ava": "^2.2.0",
         "babel-eslint": "^10.0.2",
+        "babel-jest": "^24.9.0",
         "chrome-launcher": "^0.11.2",
         "core-js": "^3.1.4",
         "directory-named-webpack-plugin": "4.0.1",
@@ -76,10 +77,13 @@
         "eslint-plugin-react": "^7.14.3",
         "favicons": "^5.4.1",
         "gatsby-plugin-eslint": "^2.0.5",
+        "identity-obj-proxy": "^3.0.0",
+        "jest": "^24.9.0",
         "lighthouse": "^5.2.0",
         "mkdirp": "^0.5.1",
         "node-gyp": "^5.0.3",
         "prettier": "^1.18.2",
+        "react-test-renderer": "^16.12.0",
         "webpack": "4.39.1",
         "why-did-you-update": "1.0.6"
     }

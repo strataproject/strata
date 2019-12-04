@@ -7,7 +7,7 @@ import Box from 'components/box'
 import Title from 'components/title'
 import Head from 'components/head'
 import Text from 'components/text'
-import Img from 'gatsby-image'
+// import Img from 'gatsby-image'
 
 const About = ({ data }) => (
   <Layout>
