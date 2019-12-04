@@ -14,7 +14,7 @@ const ButtonLink = styled(Link)`
   font-size: 18px;
   padding: 1rem 2rem;
   transition: 0.2s background-color ease;
-  ${tw`font-title`}
+  ${tw`font-sans`}
   text-transform: uppercase;
   letter-spacing: 1px;
   text-decoration: none;

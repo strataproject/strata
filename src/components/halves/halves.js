@@ -40,6 +40,8 @@ export const TextHalf = styled.div`
 `
 
 export const ImageHalf = styled.div`
+  pointer-events: none;
+
   @supports not (display: grid) {
     ${tw`w-full lg:w-1/2`}
   }

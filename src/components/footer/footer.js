@@ -11,7 +11,7 @@ const Footer = ({ title }) => (
   <div>
     <div style={{ backgroundColor: 'white' }}>
       <Container>
-        <FooterContainer></FooterContainer>
+        <FooterContainer as="div"></FooterContainer>
       </Container>
     </div>
     <PatternBox

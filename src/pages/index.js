@@ -17,7 +17,7 @@ const Index = ({ data }) => (
     <Container>
       <div style={{ position: 'relative' }}>
         <Halves>
-          <ImageHalf>
+          <ImageHalf aria-hidden="true">
             <div
               className="image-half-inner"
               style={{ height: '100%', padding: '2rem' }}

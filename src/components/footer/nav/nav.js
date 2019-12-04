@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { Container } from './nav.css'
 
 const Nav = () => (
-  <Container>
+  <Container aria-label="Legal links">
     <ul>
       <li>
         <Link to="/privacy">Privacy</Link>

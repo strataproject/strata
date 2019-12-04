@@ -10,7 +10,7 @@ const Dots = ({
   size = 10,
 }) => {
   return (
-    <svg style={style}>
+    <svg aria-hidden="true" style={style}>
       <defs>
         <pattern
           id={`dots-pattern-${id}`}
@@ -45,7 +45,7 @@ const DiagonalLines = ({
   strokeWidth = 2,
 }) => {
   return (
-    <svg style={style}>
+    <svg aria-hidden="true" style={style}>
       <defs>
         <pattern
           patternTransform="rotate(-45)"
