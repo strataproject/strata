@@ -23,7 +23,6 @@ module.exports = {
         //         COMPANY: 'My Company',
         //         COPYRIGHT: `Copyright ${new Date().getFullYear()} My Company`,
         //       },
-
         //       // By default, find values are prefixed to reduce the chances of
         //       // conflicting with real content. You can change the prefix here.
         //       // Set to `false` to disable the prefix.
@@ -41,9 +40,9 @@ module.exports = {
         stages: ['develop'],
         options: {
           emitWarning: true,
-          failOnError: false
-        }
-      }
+          failOnError: false,
+        },
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -89,11 +88,11 @@ module.exports = {
     //   },
     // },
     {
-        resolve: 'gatsby-plugin-webpack-bundle-analyzer',
-        options: {
-            analyzerPort: 8008,
-            production: false,
-        },
+      resolve: 'gatsby-plugin-webpack-bundle-analyzer',
+      options: {
+        analyzerPort: 8008,
+        production: false,
+      },
     },
     {
       resolve: `gatsby-plugin-cookiehub`,
@@ -105,14 +104,14 @@ module.exports = {
         // Puts tracking script in the head instead of the body
         head: false,
         // enable ip anonymization
-        anonymize: true,        
+        anonymize: true,
       },
     },
     {
-    resolve: `gatsby-plugin-favicon`,
+      resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: "./src/images/overlay-icon-1500-circle.png",
-   
+        logo: './src/images/overlay-icon-1500-circle.png',
+
         // WebApp Manifest Configuration
         appName: null, // Inferred with your package.json
         appDescription: 'A new data platform for sustainable finance',
@@ -126,7 +125,7 @@ module.exports = {
         orientation: 'any',
         start_url: '/?homescreen=1',
         version: '1.0',
-   
+
         icons: {
           android: true,
           appleIcon: true,
@@ -135,9 +134,30 @@ module.exports = {
           favicons: true,
           firefox: true,
           yandex: false,
-          windows: false
-        }
-      }
-    }
+          windows: false,
+        },
+      },
+    },
+    // FIXME waiting on config
+    // {
+    //   resolve: 'gatsby-plugin-google-tagmanager',
+    //   options: {
+    //     id: 'YOUR_GOOGLE_TAGMANAGER_ID',
+
+    //     // Include GTM in development.
+    //     // Defaults to false meaning GTM will only be loaded in production.
+    //     includeInDevelopment: false,
+
+    //     // datalayer to be set before GTM is loaded
+    //     // should be an object or a function that is executed in the browser
+    //     // Defaults to null
+    //     defaultDataLayer: { platform: 'gatsby' },
+
+    //     // Specify optional GTM environment details.
+    //     gtmAuth: 'YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING',
+    //     gtmPreview: 'YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME',
+    //     dataLayerName: 'YOUR_DATA_LAYER_NAME',
+    //   },
+    // },
   ],
 }
