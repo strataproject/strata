@@ -1,8 +1,8 @@
 import Typography from 'typography'
 
 //import 'typeface-muli'
-import 'typeface-inter'
-import 'typeface-lexend-deca'
+// import 'typeface-inter'
+// import 'typeface-lexend-deca'
 import 'typeface-averta-pe'
 
 // This website uses the system font stack after the placed "Montserrat" and "Source Sans Pro" fonts
