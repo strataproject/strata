@@ -57,12 +57,18 @@ const Head = ({
       content={imageUrl || `${siteUrl}/overlay-social-sharing.png`}
       property="og:image"
     />
+    <meta
+      content={imageUrl || `${siteUrl}/overlay-social-sharing.png`}
+      property="og:image:secure"
+    />
+    <meta property="og:image:type" content="image/png" />
     <meta content="1200" property="og:image:width" />
     <meta content="630" property="og:image:height" />
     <meta
       content={imageUrl || `${siteUrl}/overlay-social-sharing.png`}
       name="twitter:image"
     />
+    <meta name="twitter:image" content="Pretty Flowers in a Meadow"></meta>
     <meta content="1200" name="twitter:image:width" />
     <meta content="630" name="twitter:image:height" />
     <meta
@@ -71,6 +77,8 @@ const Head = ({
     />
     <meta content="1200" property="og:image:width" />
     <meta content="630" property="og:image:height" />
+
+    <meta property="og:locale" content="en_GB" />
 
     <script type="application/ld+json">
       {JSON.stringify(
