@@ -11,4 +11,8 @@ describe('About', () => {
     const tree = renderer.create(<About />).toJSON()
     expect(tree).toMatchSnapshot()
   })
+
+  it('tests', () => {
+    expect(1).toBe(1)
+  })
 })

@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Head from 'components/head'
 import Header from 'components/header'
 import Footer from 'components/footer'
-import GlobalStyle from 'global.css.js'
+import GlobalStyle from '~/global.css.js'
 
 import styled from 'styled-components'
 import tw from 'tailwind.macro'

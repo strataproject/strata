@@ -1,7 +1,6 @@
 {
-    "name": "Overlay",
+    "name": "overlay",
     "license": "UNLICENSED",
-    "author": "Fabian Schultz <desk@fabianschultz.com>",
     "private": true,
     "scripts": {
         "develop": "gatsby develop",
