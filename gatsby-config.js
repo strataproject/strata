@@ -69,31 +69,12 @@ module.exports = {
       },
     },
     // {
-    //   resolve: `gatsby-plugin-segment-js`,
+    //   resolve: 'gatsby-plugin-webpack-bundle-analyzer',
     //   options: {
-    //     // your segment write key for your production environment
-    //     // when process.env.NODE_ENV === 'production'
-    //     // required; non-empty string
-    //     prodKey: ``,
-
-    //     // if you have a development env for your segment account, paste that key here
-    //     // when process.env.NODE_ENV === 'development'
-    //     // optional; non-empty string
-    //     //devKey: `SEGMENT_DEV_WRITE_KEY`,
-
-    //     // whether you want to include analytics.page()
-    //     // optional; boolean that defaults to true
-    //     // if false, then don't forget to manually add it to your codebase manually!
-    //     trackPage: true,
+    //     analyzerPort: 8008,
+    //     production: false,
     //   },
     // },
-    {
-      resolve: 'gatsby-plugin-webpack-bundle-analyzer',
-      options: {
-        analyzerPort: 8008,
-        production: false,
-      },
-    },
     {
       resolve: `gatsby-plugin-cookiehub`,
       options: {
@@ -138,27 +119,11 @@ module.exports = {
         },
       },
     },
-    // FIXME waiting on config
     {
       resolve: 'gatsby-plugin-google-tagmanager',
       options: {
         id: 'GTM-PK2FGRP',
       },
-      //     // Include GTM in development.
-      //     // Defaults to false meaning GTM will only be loaded in production.
-      //     includeInDevelopment: false,
-
-      //     // datalayer to be set before GTM is loaded
-      //     // should be an object or a function that is executed in the browser
-      //     // Defaults to null
-      //     defaultDataLayer: { platform: 'gatsby' },
-
-      //     // Specify optional GTM environment details.
-      //     gtmAuth: 'YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING',
-      //     gtmPreview: 'YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME',
-      //     dataLayerName: 'YOUR_DATA_LAYER_NAME',
-      //   },
-      // },
     },
   ],
 }

@@ -1,1 +1,1 @@
-export * from './patternBox'
+export { default } from './patternBox'

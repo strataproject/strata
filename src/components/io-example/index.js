@@ -1,1 +1,1 @@
-export * from './io-example'
+export { default } from './io-example'

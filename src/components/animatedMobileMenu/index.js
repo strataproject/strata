@@ -1,1 +1,1 @@
-export * from './animatedMobileMenu'
+export { default } from './animatedMobileMenu'

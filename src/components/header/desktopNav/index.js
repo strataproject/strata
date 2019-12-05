@@ -1,1 +1,1 @@
-export * from './desktopNav'
+export { default } from './desktopNav'

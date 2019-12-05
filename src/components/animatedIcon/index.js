@@ -1,1 +1,1 @@
-export * from './animatedIcon'
+export { default } from './animatedIcon'
