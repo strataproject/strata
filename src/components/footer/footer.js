@@ -25,6 +25,7 @@ const Footer = ({ title }) => (
       <Container>
         <FooterContainer>
           <FooterNav>
+            <Nav />
             <div
               aria-label={title}
               style={{ maxWidth: '24rem', fontSize: '0.75rem' }}
@@ -38,19 +39,17 @@ const Footer = ({ title }) => (
               >
                 <Logo />
               </div>
+              <p style={{ opacity: '0.9', marginTop: '2rem' }}>
+                © All rights reserved
+                <br />
+                Overlay is incubated by ING Labs
+                <br />
+                Overlay is a registered trademark of ING.
+                <br />
+                8-10 Moorgate, London, UK, EC2R 6DA
+              </p>
             </div>
-
-            <Nav />
           </FooterNav>
-          <p style={{ opacity: '0.9' }}>
-            © All rights reserved
-            <br />
-            Overlay is incubated by ING Labs
-            <br />
-            Overlay is a registered trademark of ING.
-            <br />
-            8-10 Moorgate, London, UK, EC2R 6DA
-          </p>
         </FooterContainer>
       </Container>
     </div>
