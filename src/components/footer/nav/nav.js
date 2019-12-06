@@ -30,7 +30,7 @@ const Nav = () => (
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://uk.linkedin.com/company/ing"
+            href="https://www.linkedin.com/company/overlayearth"
           >
             LinkedIn
           </a>
