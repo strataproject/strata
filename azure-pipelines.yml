@@ -21,12 +21,19 @@ steps:
     checkLatest: true
 
 - task: Yarn@3
+  displayName: 'Install deps'
   inputs:
     arguments: 'install'
 
 - task: Yarn@3
+  displayName: 'Build'
   inputs:
     arguments: 'build'
+
+- task: Yarn@3
+  inputs:
+    arguments: 'test:e2e:ci'
+  displayName: 'Running tests'
 
 - task: CopyFiles@2
   inputs:
