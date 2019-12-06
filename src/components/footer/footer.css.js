@@ -9,6 +9,10 @@ export const FooterContainer = styled.footer`
 export const FooterNav = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-direction: row-reverse;
+  flex-direction: column-reverse;
+
+  @media (min-width: 768px) {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
 `

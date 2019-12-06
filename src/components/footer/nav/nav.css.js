@@ -12,7 +12,14 @@ export const Container = styled.nav`
     display: flex;
     list-style: none;
     padding: 0;
-    justify-content: flex-end;
+    margin-left: 0;
+    margin-bottom: 0;
+
+    @media (min-width: 768px) {
+      justify-content: flex-end;
+      margin-left: 1.45rem;
+      margin-bottom: 1.45rem;
+    }
 
     li {
       ${tw`font-sans text-xs inline-block px-2`}
