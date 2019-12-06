@@ -7,6 +7,7 @@ import Box from 'components/box'
 import Title from 'components/title'
 import Head from 'components/head'
 import Text from 'components/text'
+import TeamGrid from '~/components/teamMember/grid'
 // import Img from 'gatsby-image'
 
 const About = ({ data }) => (
@@ -25,6 +26,12 @@ const About = ({ data }) => (
           }}
         />
       </Text>
+      <Box>
+        <Title as="h2" size="large" theme="blueOnWhite">
+          The Team
+        </Title>
+      </Box>
+      <TeamGrid team={data.teamJson.team} />
     </Container>
     <div style={{ marginTop: '16em' }} />
   </Layout>
@@ -50,6 +57,16 @@ export const query = graphql`
         fluid(maxWidth: 800, quality: 90) {
           ...GatsbyImageSharpFluid
         }
+      }
+    }
+    teamJson {
+      team {
+        name
+        title
+        photo
+        twitter
+        github
+        linkedin
       }
     }
     aboutJson {

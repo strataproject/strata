@@ -4,27 +4,38 @@
   "team": [
     {
       "name": "Stef Lewandowski",
-      "title": "Product co-founder"
+      "title": "Product co-founder",
+      "photo": "stef",
+      "linkedin": "steflewandowski",
+      "twitter": "stef",
+      "github": "stef"
     },
     {
       "name": "Tee Pruitt",
-      "title": "Commercial co-founder"
+      "title": "Commercial co-founder",
+      "photo": "tee"
     },
     {
       "name": "Alex Deschamps-Sonsino",
-      "title": "Research"
+      "title": "Research",
+      "photo": ""
     },
     {
       "name": "Vlad Mitroi",
-      "title": "Sustainable Finance"
+      "title": "Sustainable Finance",
+      "photo": ""
     },
     {
       "name": "Ant Stanley",
-      "title": "Architecture"
+      "title": "Architecture",
+      "photo": ""
     },
+    { "name": "Shilpa Narayan", "title": "Project Manager", "photo": "shilpa" },
     {
       "name": "Remy Sharp",
-      "title": "Software Design"
+      "title": "Software Design",
+      "photo": "remy",
+      "twitter": "rem"
     }
   ]
 }
