@@ -32,6 +32,15 @@ export const Figure = styled.figure`
 
     p {
       margin: 0;
+
+      span {
+        margin-top: 0.5em;
+        display: inline-block;
+        font-size: 80%;
+        a {
+          padding: 0.5em;
+        }
+      }
     }
 
     ul {

@@ -3,19 +3,19 @@
   "content": "team.md",
   "team": [
     {
+      "name": "Tee Pruitt",
+      "title": "Commercial Co-founder",
+      "photo": "tee",
+      "twitter": "teepruitt",
+      "linkedin": "teepruitt"
+    },
+    {
       "name": "Stef Lewandowski",
       "title": "Product Co-founder",
       "photo": "stef",
       "linkedin": "steflewandowski",
       "twitter": "stef",
       "github": "stef"
-    },
-    {
-      "name": "Tee Pruitt",
-      "title": "Commercial Co-founder",
-      "photo": "tee",
-      "twitter": "teepruitt",
-      "linkedin": "teepruitt"
     },
     {
       "name": "Vlad Mitroi",
@@ -32,7 +32,7 @@
     },
     { 
       "name": "Shilpa Narayan", 
-      "title": "Project Manager", 
+      "title": "Agile", 
       "photo": "shilpa",
       "linkedin": "shilpa-narayan-b8897a1"
     },

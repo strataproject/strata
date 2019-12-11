@@ -2,27 +2,30 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Figure } from './teamMember.css'
 
-import Twitter from '~/images/twitter.svg'
-import Github from '~/images/github.svg'
-import LinkedIn from '~/images/linkedin.svg'
+import { FaTwitter } from 'react-icons/fa'
+import { FaLinkedin } from 'react-icons/fa'
 
-const socials = {
-  twitter: Twitter,
-  linkedin: LinkedIn,
-  github: Github,
-}
-
-const TeamMember = ({ name, title, photo, ...socialLinks }) => (
-  <Figure>
+const TeamMember = ({ name, title, photo, linkedin, twitter }) => (
+  <Figure itemscope itemtype="http://schema.org/Person">
     <img src={`/team/${photo}.jpg`} alt="" />
     <figcaption>
-      <p className="name">{name}</p>
+      <p className="name" itemprop="name">{name}</p>
       <p className="title">{title}</p>
-      {/* <ul className="social-links">
-        {Object.entries(socialLinks).map(([key, value]) => {
-          return value ? <li>{socials[key]()}</li> : null
-        })}
-      </ul> */}
+
+      <p>
+        <span>
+          {
+            twitter &&
+            <a href={`https://twitter.com/${twitter}`} itemprop="url"><FaTwitter /></a>
+          }
+        </span>
+        <span>
+          {
+            linkedin &&
+            <a href={`https://linkedin.com/in/${linkedin}`} itemprop="url"><FaLinkedin /></a>
+          }
+        </span>
+      </p>
     </figcaption>
   </Figure>
 )
