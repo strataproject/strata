@@ -24,7 +24,6 @@ export const Figure = styled.figure`
   img {
     border-radius: 50%;
     max-width: 160px;
-    box-shadow: 1px 1px 8px 0px #00000042;
   }
 
   figcaption {

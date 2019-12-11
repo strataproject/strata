@@ -4,7 +4,7 @@
   "team": [
     {
       "name": "Stef Lewandowski",
-      "title": "Product co-founder",
+      "title": "Product Co-founder",
       "photo": "stef",
       "linkedin": "steflewandowski",
       "twitter": "stef",
@@ -12,30 +12,43 @@
     },
     {
       "name": "Tee Pruitt",
-      "title": "Commercial co-founder",
-      "photo": "tee"
-    },
-    {
-      "name": "Alex Deschamps-Sonsino",
-      "title": "Research",
-      "photo": ""
+      "title": "Commercial Co-founder",
+      "photo": "tee",
+      "twitter": "teepruitt",
+      "linkedin": "teepruitt"
     },
     {
       "name": "Vlad Mitroi",
       "title": "Sustainable Finance",
-      "photo": ""
+      "photo": "vlad",
+      "linkedin": "vladmitroi"
     },
     {
-      "name": "Ant Stanley",
-      "title": "Architecture",
-      "photo": ""
+      "name": "Alex Deschamps-Sonsino",
+      "title": "Research",
+      "photo": "alex",
+      "linkedin": "designswarm",
+      "twitter": "iotwatch"
     },
-    { "name": "Shilpa Narayan", "title": "Project Manager", "photo": "shilpa" },
+    { 
+      "name": "Shilpa Narayan", 
+      "title": "Project Manager", 
+      "photo": "shilpa",
+      "linkedin": "shilpa-narayan-b8897a1"
+    },
     {
       "name": "Remy Sharp",
       "title": "Software Design",
       "photo": "remy",
-      "twitter": "rem"
+      "twitter": "rem",
+      "linkedin": "remysharp"
+    },
+    {
+      "name": "Ian Kynnersley",
+      "title": "Technology",
+      "photo": "ian",
+      "twitter": "kpopper",
+      "linkedin": "iankynnersley"
     }
   ]
 }
