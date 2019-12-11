@@ -8,7 +8,7 @@ import Signup from 'components/signup'
 import Hero from 'components/hero/hero.css'
 import AnimatedIcon from 'components/animatedIcon'
 import ButtonLink from 'components/buttonLink'
-import { ImageHalf, TextHalf, Halves } from 'components/halves'
+import { ImageHalf, TextHalf, GridHalves } from 'components/halves'
 import { pink, green, blue } from 'constants/theme'
 
 // eslint-disable-next-line
@@ -16,7 +16,7 @@ const Index = ({ data }) => (
   <Layout>
     <Container>
       <div style={{ position: 'relative' }}>
-        <Halves>
+        <GridHalves>
           <ImageHalf>
             <div
               className="image-half-inner"
@@ -90,7 +90,7 @@ const Index = ({ data }) => (
               globally.{' '}
             </p>
           </TextHalf>
-        </Halves>
+        </GridHalves>
       </div>
     </Container>
 

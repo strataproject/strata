@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import HexagonIcon from './hexagonIcon'
 import CircleIcon from './circleIcon'
 import RhombusIcon from './rhombusIcon'
+import MetropolisIcon from './metropolisIcon'
 
 import ParallaxImage from './parallaxImage'
 import { blue, pink } from 'constants/theme'
@@ -22,8 +23,12 @@ const AnimatedIcon = ({
 
   if (shape == 'rhombus') {
     ShapeIcon = RhombusIcon
-  } else if (shape == 'hexagon') {
+  }
+  if (shape == 'hexagon') {
     ShapeIcon = HexagonIcon
+  }
+  if (shape == 'metropolis') {
+    ShapeIcon = MetropolisIcon
   }
 
   //let canHandleMixBlendMode = false

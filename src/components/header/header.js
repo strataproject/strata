@@ -19,6 +19,7 @@ const Header = ({ title }) => {
     { to: '/about', label: 'About' },
     // { to: '/blog', label: 'Blog' },
     { to: '/careers', label: 'Careers' },
+    { to: '/signup', label: 'Newsletter' },
     { to: '/contact', label: 'Contact' },
   ]
   return (

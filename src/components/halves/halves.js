@@ -17,6 +17,27 @@ export const Halves = styled.div`
       div:nth-child(2) {
         grid-area: 1 / 7 / 1 / 13;
       }
+    }
+  }
+`
+
+export const GridHalves = styled.div`
+  @supports not (display: grid) {
+    ${tw`lg:flex`}
+  }
+  @supports (display: grid) {
+    align-items: center;
+
+    @media (min-width: 60em) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      div:nth-child(1) {
+        grid-area: 1 / 1 / 1 / 7;
+      }
+      div:nth-child(2) {
+        grid-area: 1 / 7 / 1 / 13;
+      }
       div:nth-child(3) {
         grid-area: 2 / 8 / 2 / 13;
       }
