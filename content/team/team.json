@@ -23,13 +23,6 @@
       "photo": "vlad",
       "linkedin": "vladmitroi"
     },
-    {
-      "name": "Alex Deschamps-Sonsino",
-      "title": "Research",
-      "photo": "alex",
-      "linkedin": "designswarm",
-      "twitter": "iotwatch"
-    },
     { 
       "name": "Shilpa Narayan", 
       "title": "Agile", 
@@ -42,6 +35,13 @@
       "photo": "remy",
       "twitter": "rem",
       "linkedin": "remysharp"
+    },
+    {
+      "name": "Alex Deschamps-Sonsino",
+      "title": "Research",
+      "photo": "alex",
+      "linkedin": "designswarm",
+      "twitter": "iotwatch"
     },
     {
       "name": "Ian Kynnersley",
