@@ -1,5 +1,5 @@
 import React from 'react'
-import TeamMember from './teamMember'
+import TeamMember from './TeamMember'
 import PropTypes from 'prop-types'
 import { Grid } from './teamMember.css'
 
