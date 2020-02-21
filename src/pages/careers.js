@@ -34,7 +34,9 @@ const Careers = ({ data }) => (
       <p>&nbsp;</p>
       <h2>Advertising soon</h2>
       <p>
-        The following roles are in our hiring plan but we have not yet advertised them. I you'd be interested in these roles, please email us at <a href="overlay@jobs.workable.com">overlay@jobs.workable.com</a>.
+        The following roles are in our hiring plan but we have not yet
+        advertised them. I you&apos;d be interested in these roles, please email us
+        at <a href="overlay@jobs.workable.com">overlay@jobs.workable.com</a>.
       </p>
       {data.pending.edges.map(i => (
         <div key={i.node.childMarkdownRemark.frontmatter.url}>
@@ -44,7 +46,7 @@ const Careers = ({ data }) => (
 
       <p>&nbsp;</p>
       <h2>Recently closed</h2>
-      
+
       {data.closed.edges.map(i => (
         <div key={i.node.childMarkdownRemark.frontmatter.url}>
           <h3>{i.node.childMarkdownRemark.frontmatter.title}</h3>
