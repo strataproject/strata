@@ -28,7 +28,7 @@
       "title": "Agile", 
       "photo": "shilpa",
       "linkedin": "shilpa-narayan-b8897a1"
-    }
+    },
     {
       "name": "Ian Kynnersley",
       "title": "Technology",
@@ -55,6 +55,6 @@
       "photo": "alex",
       "linkedin": "designswarm",
       "twitter": "iotwatch"
-    },
+    }
   ]
 }
