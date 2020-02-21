@@ -25,10 +25,10 @@ steps:
   inputs:
     arguments: 'install'
 
-- task: Yarn@3
-  inputs:
-    arguments: 'test:e2e:ci'
-  displayName: 'Running tests'
+# - task: Yarn@3
+#   inputs:
+#     arguments: 'test:e2e:ci'
+#   displayName: 'Running tests'
 
 - task: Yarn@3
   displayName: 'Build'
