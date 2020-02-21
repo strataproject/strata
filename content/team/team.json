@@ -28,6 +28,19 @@
       "title": "Agile", 
       "photo": "shilpa",
       "linkedin": "shilpa-narayan-b8897a1"
+    }
+    {
+      "name": "Ian Kynnersley",
+      "title": "Technology",
+      "photo": "ian",
+      "twitter": "kpopper",
+      "linkedin": "iankynnersley"
+    },
+    {
+      "name": "Wikke van Weelderen",
+      "title": "Service Design",
+      "photo": "wikke",
+      "linkedin": "wvanweelderen"
     },
     {
       "name": "Remy Sharp",
@@ -43,12 +56,5 @@
       "linkedin": "designswarm",
       "twitter": "iotwatch"
     },
-    {
-      "name": "Ian Kynnersley",
-      "title": "Technology",
-      "photo": "ian",
-      "twitter": "kpopper",
-      "linkedin": "iankynnersley"
-    }
   ]
 }
