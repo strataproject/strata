@@ -15,7 +15,7 @@ const Path = props => (
 export const MenuToggle = ({ toggle, isOpen }) => (
   <MenuToggleButton
     onClick={toggle}
-    tabindex="1"
+    tabindex="-1"
     role="switch"
     aria-checked={isOpen}
     title="Toggle menu"
