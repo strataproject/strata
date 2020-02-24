@@ -35,7 +35,7 @@ const Careers = ({ data }) => (
       <h2>Advertising soon</h2>
       <p>
         The following roles are in our hiring plan but we have not yet
-        advertised them. I you&apos;d be interested in these roles, please email
+        advertised them. If you&apos;d be interested in these roles, please email
         us at <a href="overlay@jobs.workable.com">overlay@jobs.workable.com</a>.
       </p>
       {data.pending.edges.map(i => (
