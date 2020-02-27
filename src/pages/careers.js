@@ -44,14 +44,14 @@ const Careers = ({ data }) => (
         </div>
       ))}
 
-      <p>&nbsp;</p>
+      {/*<p>&nbsp;</p>
       <h2>Recently closed</h2>
 
       {data.closed.edges.map(i => (
         <div key={i.node.childMarkdownRemark.frontmatter.url}>
-          <h3>{i.node.childMarkdownRemark.frontmatter.title}</h3>
+          <h4>{i.node.childMarkdownRemark.frontmatter.title}</h4>
         </div>
-      ))}
+      ))}*/}
     </Container>
     <div style={{ marginTop: '16em' }} />
   </Layout>
