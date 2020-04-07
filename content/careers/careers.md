@@ -1,5 +1,5 @@
-We're hiring for the following roles. Please apply via our Workable page, linked to from each job title below.
+We are not currently hiring for any new roles with the Overlay team.
 
-If you'd like to work with us in some way, but don't see a role here that fits your skills, we're still happy to hear from you. 
+If you'd like to work with us in some way in the future, we'd happy to hear from you. 
 
 Please send a message with your CV / online profile to [overlay@jobs.workable.com](mailto:overlay@jobs.workable.com)

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from 'components/layout'
@@ -31,18 +31,20 @@ const Careers = ({ data }) => (
         </div>
       ))}
 
-      <p>&nbsp;</p>
-      <h2>Advertising soon</h2>
-      <p>
-        The following roles are in our hiring plan but we have not yet
-        advertised them. If you&apos;d be interested in these roles, please email
-        us at <a href="overlay@jobs.workable.com">overlay@jobs.workable.com</a>.
-      </p>
-      {data.pending.edges.map(i => (
-        <div key={i.node.childMarkdownRemark.frontmatter.url}>
-          <h3>{i.node.childMarkdownRemark.frontmatter.title}</h3>
-        </div>
-      ))}
+      {data.pending && (data.pending.length > 0) && <Fragment>
+        <p>&nbsp;</p>
+        <h2>Advertising soon</h2>
+        <p>
+          The following roles are in our hiring plan but we have not yet
+          advertised them. If you&apos;d be interested in these roles, please email
+          us at <a href="overlay@jobs.workable.com">overlay@jobs.workable.com</a>.
+        </p>
+        {data.pending.edges.map(i => (
+          <div key={i.node.childMarkdownRemark.frontmatter.url}>
+            <h3>{i.node.childMarkdownRemark.frontmatter.title}</h3>
+          </div>
+        ))}
+      </Fragment>}
 
       {/*<p>&nbsp;</p>
       <h2>Recently closed</h2>
